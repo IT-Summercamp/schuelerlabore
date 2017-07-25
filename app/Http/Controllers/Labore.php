@@ -28,7 +28,7 @@ class Labore extends Controller {
 	public function index()
 	{
     $labore = DB::select('select * from labore') ;
-		return view('auth\register', ['labore'=>$labore]);
+		return view('register', ['labore'=>$labore]);
 	}
 
 }
