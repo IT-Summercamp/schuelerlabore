@@ -42,7 +42,8 @@
 					<li><a href="{{ url('/aktuelleveranstaltungen') }}">Aktuelle Veranstaltungen</a></li>
 				@else
 					<li><a href="{{ url('/') }}">Startseite</a></li>
-
+					<li><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
+					<li><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
 
 
 				@endif
@@ -50,7 +51,10 @@
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-
+					@if (Auth::guest())
+					@else
+					<li><a href="{{ url('/benutzerverwaltung')}} ">Benutzerverwaltung</a></li>
+					@endif
 				</ul>
 			</div>
 		</div>

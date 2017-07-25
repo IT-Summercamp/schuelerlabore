@@ -23,6 +23,24 @@ Route::get('schuelerlabore', 'LaborController@index');
 Route::get('lehrer', 'LehrerController@index');
 Route::get('aktuelleveranstaltungen', 'VeranstaltungenController@index');
 
+#BenutzerController
+Route::get('benutzerverwaltung', 'BenutzerverwaltungController@index');
+		Route::get('benutzerhinzufügen', 'Labore@index');
+		Route::get('benutzerbearbeiten/{id}', 'BenutzerBearbeitungsController@show');
+		Route::post('benutzerbearbeiten/{id}', 'BenutzerBearbeitungsController@edit');
+		Route::get('benutzerentfernen/{id}', 'BenutzerEntfernungsController@index');
+
+#LaborController
+Route::get('laborverwaltung', 'LaborverwaltungController@index');
+		Route::get('laborhinzufuegen', 'LaborHinzufuegenController@index');
+		Route::post('laborhinzufuegen', 'LaborHinzufuegenController@datenbank');
+		Route::get('laborbearbeiten/{id}', 'LaborBearbeitungsController@show');
+		Route::post('laborbearbeiten/{id}', 'LaborBearbeitungsController@edit');
+		Route::get('laborentfernen/{id}', 'LaborEntfernungsController@index');
+
+#KursController
+Route::get('kursverwaltung', 'KursverwaltungController@index');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
