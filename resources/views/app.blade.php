@@ -30,35 +30,27 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href=""></a>
+				<a class="navbar-brand" href="">SchülerlaboreSachsen</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 				@if (Auth::guest())
 					<li><a href="{{ url('/') }}">Startseite</a></li>
+					<li><a href="{{ url('/schuelerlabore') }}">Schülerlabore</a></li>
+					<li><a href="{{ url('/lehrer') }}">Für Lehrer</a></li>
+					<li><a href="{{ url('/aktuelleveranstaltungen') }}">Aktuelle Veranstaltungen</a></li>
 				@else
 					<li><a href="{{ url('/') }}">Startseite</a></li>
-					
-					
-			
+
+
+
 				@endif
 
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					@if (Auth::guest())
-						<li><a href="{{ url('/auth/login') }}">Einloggen</a></li>
-						<li><a href="{{ url('/auth/register') }}">Registrieren</a></li>
-					@else
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-							
-								<li><a href="{{ url('/auth/logout') }}">Ausloggen</a></li>
-							</ul>
-						</li>
-					@endif
+
 				</ul>
 			</div>
 		</div>
@@ -74,7 +66,18 @@
       <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-								<li><a href="">&copy; V1.0.2 - <?php echo date("Y"); ?> Sven Liebert</a></li>
+							@if (Auth::guest())
+								<li><a href="{{ url('/auth/login') }}">Einloggen</a></li>
+								<li><a href="{{ url('/auth/register') }}">Registrieren</a></li>
+							@else
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+
+										<li><a href="{{ url('/auth/logout') }}">Ausloggen</a></li>
+									</ul>
+								</li>
+							@endif
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
 						</ul>
 				</div>

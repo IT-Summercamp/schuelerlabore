@@ -19,6 +19,7 @@ use App\User;
 #MainController
 Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
+Route::get('schuelerlabore', 'LaborController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
