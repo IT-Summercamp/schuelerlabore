@@ -27,13 +27,7 @@
 								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
 							</div>
 						</div>
-						
-						<div class="form-group">
-							<label class="col-md-4 control-label">Schule</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="schule" value="{{ old('schule') }}">
-							</div>
-						</div>
+					
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Addresse</label>
