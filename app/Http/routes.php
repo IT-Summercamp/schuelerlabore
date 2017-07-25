@@ -21,6 +21,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('schuelerlabore', 'LaborController@index');
 Route::get('lehrer', 'LehrerController@index');
+Route::get('aktuelleveranstaltungen', 'VeranstaltungenController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
