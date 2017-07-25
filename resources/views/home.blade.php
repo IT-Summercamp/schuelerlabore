@@ -9,7 +9,11 @@
 
 				<div class="panel-heading">Startseite </div>
 
+<div class="panel-body">
 
+	Danke für Ihren Login. 
+
+</div>
 
 
 				</div>
