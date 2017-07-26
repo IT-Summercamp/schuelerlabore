@@ -40,6 +40,8 @@ Route::get('laborverwaltung', 'LaborverwaltungController@index');
 
 #KursController
 Route::get('kursverwaltung', 'KursverwaltungController@index');
+Route::get('kursuebersicht/{name}', 'KursverwaltungController@index');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
