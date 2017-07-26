@@ -30,17 +30,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
+
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 				@if (Auth::guest())
+				<a class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
 					<li style="font-size : 20px;" ><a href="{{ url('/') }}"></a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
+				<a class="navbar-brand" href="{{ url('/home') }}"><font color=white>SchülerlaboreSachsen</a></font>
 					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
 
