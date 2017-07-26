@@ -34,6 +34,7 @@ class LaborHinzufuegenController extends Controller {
 
 	public function datenbank(Request $request) {
 		$name = $request->input('name');
+		$beschreibung = $request->input('beschreibung');
 		$ort = $request->input('ort');
 		$email = $request->input('email');
 		$telefon = $request->input('telefon');
@@ -44,7 +45,7 @@ class LaborHinzufuegenController extends Controller {
 		$technikinformatik = $request->input('technikinformatik');
 		$mathematik = $request->input('mathematik');
 		$fachuebergreifend = $request->input('fachuebergreifend');
-		DB::insert('insert into labore (name, ort, email, telefon, website, biologie, physik, chemie, technikinformatik, mathematik, fachuebergreifend) values(?, ?, ?, ?, ?, ?, ?,?,?,?,?) ',[$name, $ort, $email, $telefon, $website, $biologie, $physik, $chemie, $technikinformatik, $mathematik, $fachuebergreifend]);
+		DB::insert('insert into labore (name, beschreibung, ort, email, telefon, website, biologie, physik, chemie, technikinformatik, mathematik, fachuebergreifend) values(?,?, ?, ?, ?, ?, ?, ?,?,?,?,?) ',[$name, $beschreibung, $ort, $email, $telefon, $website, $biologie, $physik, $chemie, $technikinformatik, $mathematik, $fachuebergreifend]);
 		?><meta http-equiv="refresh" content="0; URL=/public/laborverwaltung"><?php
 	}
 

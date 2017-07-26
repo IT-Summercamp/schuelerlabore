@@ -12,6 +12,7 @@ class LaborBearbeitungsController extends Controller {
    }
    public function edit(Request $request,$name) {
     $name = $request->input('name');
+    $beschreibung = $request->input('beschreibung');
  		$ort = $request->input('ort');
  		$email = $request->input('email');
  		$telefon = $request->input('telefon');
@@ -23,6 +24,7 @@ class LaborBearbeitungsController extends Controller {
  		$mathematik = $request->input('mathematik');
  		$fachuebergreifend = $request->input('fachuebergreifend');
       DB::update('update labore set name = ? where name = ?',[$name,$name]) ;
+      DB::update('update labore set beschreibung = ? where name = ?',[$beschreibung,$name]) ;
 	  DB::update('update labore set ort = ? where name = ?',[$ort,$name]) ;
     DB::update('update labore set email = ? where name = ?',[$email,$name]) ;
 	  DB::update('update labore set telefon = ? where name = ?',[$telefon,$name]) ;

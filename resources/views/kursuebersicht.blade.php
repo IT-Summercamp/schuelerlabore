@@ -9,51 +9,47 @@
 
 				<div class="panel-heading">Kursübersicht</div>
 
-				<table id="kurse">
-         <tr>
-            <td><b>Name</b></td>
-						<td><b>Labor</b></td>
-						<td><b>Beschreibung</b></td>
-						<td><b>Zielgruppe</b></td>
-						<td><b>Grundschule</b></td>
-						<td><b>Förderschule</b></td>
-						<td><b>Oberschule</b></td>
-						<td><b>Gymnasium</b></td>
-						<td><b>Dauer</b></td>
-						<td><b>Zeitraum</b></td>
-						<td><b>Kosten</b></td>
-						<td><b>Telefon</b></td>
-						<td><b>E-Mail</b></td>
-						<td><b>Website</b></td>
-						<td></td>
-						<td></td>
-         </tr>
+			</br>
          @foreach ($kurse as $kurs)
-         <tr>
-					 <td>{{$kurs->name}}</td>
-					 <td>{{$kurs->labor}}</td>
-					 <td><b>Beschreibung</b></td>
-					 <td><b>Zielgruppe</b></td>
-					 <td><b>Grundschule</b></td>
-					 <td><b>Förderschule</b></td>
-					 <td><b>Oberschule</b></td>
-					 <td><b>Gymnasium</b></td>
-					 <td><b>Dauer</b></td>
-					 <td><b>Zeitraum</b></td>
-					 <td><b>Kosten</b></td>
-					 <td><b>Telefon</b></td>
-					 <td><b>E-Mail</b></td>
-					 <td><b>Website</b></td>
-         </tr>
+
+				 <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#kurs{{$kurs->id}}">
+        {{ $kurs->name }}
+				&nbsp; @if ($kurs->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+					@if ($kurs->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+					@if ($kurs->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+					@if ($kurs->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif
+			</a>
+      </h4>
+    </div>
+    <div id="kurs{{$kurs->id}}" class="panel-collapse collapse">
+      <div class="panel-body">
+				<ul>
+					<li>Name: {{ $kurs->name }}</li>
+					<li>Labor: {{ $kurs->labor }}</li>
+					<li>Zielgruppe: {{ $kurs->zielgruppe }}</li>
+					<li>Grundschule: {{ $kurs->grundschule }}</li>
+					<li>Förderschule: {{ $kurs->foerderschule }}</li>
+					<li>Oberschule: {{ $kurs->oberschule }}</li>
+					<li>Gymnasium: {{ $kurs->gymnasium }}</li>
+					<li>Dauer: {{ $kurs->dauer }}</li>
+					<li>Zeitraum: {{ $kurs->zeitraum }}</li>
+					<li>Kosten: {{ $kurs->kosten }}</li>
+					<li>Telefon: {{ $kurs->telefon }}</li>
+					<li>E-Mail: {{ $kurs->email }}</li>
+					<li>Website: {{ $kurs->website }}</li>
+			 </ul>
+
+			</div>
+    </div>
+  </div>
+</div>
+
          @endforeach
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td><a href = '{{ url('/benutzerhinzufügen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
-      </table>
+
 
 
 				</div>

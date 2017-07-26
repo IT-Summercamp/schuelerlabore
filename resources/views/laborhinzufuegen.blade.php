@@ -22,6 +22,13 @@
 										 </div>
 									 </div>
 									 <div class="form-group">
+												<label class="col-md-4 control-label">Beschreibung</label>
+												<div class="col-md-6">
+															<input type="text" class="form-control" name="beschreibung">
+														</br>
+												</div>
+											</div>
+									 <div class="form-group">
 		 										 <label class="col-md-4 control-label">Ort</label>
 		 										 <div class="col-md-6">
 		 													 <input type="text" class="form-control" name="ort">

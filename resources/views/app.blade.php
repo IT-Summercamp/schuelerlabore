@@ -55,8 +55,22 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
+					<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>Weitere Links</font><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
+								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
+							</ul>
+						</li>
 					@else
 					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></font></li>
+					<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
+								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
+							</ul>
+						</li>
 					@endif
 				</ul>
 			</div>
@@ -73,12 +87,7 @@
       <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							@if (Auth::guest())
-								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
-							@else
-								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
-							@endif
-								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
+
 						</ul>
 				</div>
       </div>
