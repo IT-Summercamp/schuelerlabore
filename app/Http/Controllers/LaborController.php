@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use DB;
 class LaborController extends Controller {
 
 	/*
@@ -21,7 +22,8 @@ class LaborController extends Controller {
 	 */
 	public function index()
 	{
-		return view('schuelerlabore');
+		$labore = DB::select('select * from labore') ;
+		 return view('schuelerlabore',['labore'=>$labore]) ;
 	}
 
 }
