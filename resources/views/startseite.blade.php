@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default" style="text-align:center">
-							<div class="panel-heading">Startseite</div>
+							<div class="panel-heading">SchülerlaboreSachsen</div>
 
 							<div class="panel-body">
 									<img src="header_image.png" style="width:100%;height:100%">
