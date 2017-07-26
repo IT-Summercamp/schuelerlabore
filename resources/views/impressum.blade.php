@@ -39,7 +39,7 @@
 				<div align="center">
 
 				    <h2>Creators:</h2>
-				    <img src="Platzhalter3.jpg"
+				    <img src="https://www2.pic-upload.de/img/33612855/it_summercamp_group.jpg"
 				     width="500"
 				     height="350"
 				     align="center"/><p></p>
