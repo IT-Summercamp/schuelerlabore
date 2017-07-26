@@ -7,8 +7,6 @@
 			<div class="panel panel-default">
 
 				<div class="panel-heading">Impressum </div>
-				<!doctype html>
-				<html>
 
 				<body bgcolor="white">
 
@@ -39,7 +37,7 @@
 				<div align="center">
 
 				    <h2>Creators:</h2>
-				    <img src="https://www2.pic-upload.de/img/33612855/it_summercamp_group.jpg"
+				    <img src="/public/image/gruppe.JPG"
 				     width="500"
 				     height="350"
 				     align="center"/><br />
