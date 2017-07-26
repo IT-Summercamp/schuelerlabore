@@ -42,8 +42,8 @@
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
 					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
-					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
-					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
 
 
 				@endif
