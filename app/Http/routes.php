@@ -44,6 +44,8 @@ Route::get('kursuebersicht/{name}', 'KursuebersichtsController@index');
 		Route::get('kursentfernen/{id}', 'KursEntfernungsController@index');
 		Route::get('kurshinzufuegen', 'KursHinzufuegenController@index');
 		Route::post('kurshinzufuegen', 'KursHinzufuegenController@datenbank');
+		Route::get('kursbearbeiten/{id}', 'KursBearbeitungsController@show');
+		Route::post('kursbearbeiten/{id}', 'KursBearbeitungsController@edit');
 
 #SeitenController
 Route::get('bearbeitunglehrer', 'LehrerBearbeitungsController@show');
