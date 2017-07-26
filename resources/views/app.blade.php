@@ -22,7 +22,7 @@
 	<![endif]-->
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default"  style="background-color:#2ECC71;" >
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -30,16 +30,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="">SchülerlaboreSachsen</a>
+				<a class="navbar-brand" href=""><font color=white>SchülerlaboreSachsen</a></font>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 				@if (Auth::guest())
-					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
-					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}">Schülerlabore</a></li>
-					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}">Für Lehrer</a></li>
-					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}">Aktuelle Veranstaltungen</a></li>
+					<li style="font-size : 20px;" ><a href="{{ url('/') }}"></a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
 					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
