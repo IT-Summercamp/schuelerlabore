@@ -9,7 +9,7 @@
 
 				<div class="panel-heading">Kursübersicht</div>
 
-				<table class="table" id="table">
+				<table id="kurse">
          <tr>
             <td><b>Name</b></td>
 						<td><b>Labor</b></td>

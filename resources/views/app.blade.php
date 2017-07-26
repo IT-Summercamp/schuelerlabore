@@ -56,7 +56,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					@else
-					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></li>
+					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></font></li>
 					@endif
 				</ul>
 			</div>
