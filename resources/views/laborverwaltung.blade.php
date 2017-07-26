@@ -47,7 +47,11 @@
 						<td>{{ $labor->telefon }}</td>
 						<td>{{ $labor->website }}</td>
 						<td><a href = 'laborbearbeiten/{{ $labor->name }}'><label class="btn btn-warning">Bearbeiten</label></a></td>
+						@if (Auth::user()->administrator == "Ja")
 						<td><a href = 'laborentfernen/{{ $labor->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
+						@else
+						<td></td>
+						@endif
          </tr>
          @endforeach
 				 <td></td>
@@ -57,8 +61,13 @@
 				 <td></td>
 				 <td></td>
 				 <td></td>
+				 @if (Auth::user()->administrator == "Ja")
 				 <td><a href = '{{ url('/laborhinzufuegen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
-      </table>
+				 @else
+				 <td></td>
+				 @endif
+
+			</table>
 
 
 				</div>
