@@ -20,6 +20,6 @@ class BenutzerBearbeitungsController extends Controller {
 	  DB::update('update users set email = ? where id = ?',[$email,$id]) ;
     DB::update('update users set administrator = ? where id = ?',[$administrator,$id]) ;
 	  DB::update('update users set schuelerlabor = ? where id = ?',[$schuelerlabor,$id]) ;
-	  ?><meta http-equiv="refresh" content="0; URL=..\benutzerverwaltung"><?php
+	  ?><meta http-equiv="refresh" content="0; URL=/public/benutzerverwaltung"><?php
    }
 }
