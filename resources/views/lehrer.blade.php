@@ -7,7 +7,13 @@
 			<div class="panel panel-default">
 
 				<div class="panel-heading">Für Lehrer </div>
+<div class="panel-body">
 
+	<?php $text = $lehrer[0]->text;?>
+
+	 <textarea style="border: none" readonly rows="20" cols="125">{{$text}}</textarea>
+
+</div>
 
 
 

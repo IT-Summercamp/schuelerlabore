@@ -47,6 +47,8 @@
 					<li style="font-size : 20px;"><a href="{{ url('/home')}} "><font color=white>Startseite</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/bearbeitunglehrer')}} "><font color=white>Seitenbearbeitung Lehrer</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/bearbeitungimpressum')}} "><font color=white>Seitenbearbeitung Impressum</a></font></li>
 
 
 				@endif

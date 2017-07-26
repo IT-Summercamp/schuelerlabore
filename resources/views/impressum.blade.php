@@ -7,13 +7,20 @@
 			<div class="panel panel-default">
 
 				<div class="panel-heading">Impressum </div>
-
+<div class="panel-body">
 				<body bgcolor="white">
 
 				<font color="black">
 
 				<h2>Verantwortlich als Urheber und Herausgeber:</h2>
 
+				<b><?php echo $impressum[0]->name; ?></b></br>
+				<?php echo $impressum[0]->strasse; ?></br>
+				<?php echo $impressum[0]->plz; ?> <?php echo $impressum[0]->ort; ?></br>
+			</br>
+
+			Telefon: <?php echo $impressum[0]->telefon; ?></br>
+			E-Mail: <?php echo $impressum[0]->email; ?>
 
 
 				<h2>Haftungsausschluss:</h2>
@@ -41,8 +48,8 @@
 				     width="500"
 				     height="350"
 				     align="center"/><br />
-
-				Diese Website wurde innerhalb des IT-Summercamps 2017 entwickelt und dabei unterstützt von Communardo Software GmbH, T-Mulitmedia Systems und SAP SE
+					 </br>
+				Diese Website wurde innerhalb des IT-Summercamps 2017 entwickelt und dabei unterstützt von Communardo Software GmbH, T-Mulimedia Systems und SAP SE
 				    </div>
 
 

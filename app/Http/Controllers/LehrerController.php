@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use DB;
+
 class LehrerController extends Controller {
 
 	/*
@@ -21,7 +23,8 @@ class LehrerController extends Controller {
 	 */
 	public function index()
 	{
-		return view('lehrer');
+		$lehrer = DB::select('select * from fuerlehrer where id=1') ;
+		return view('lehrer',['lehrer'=>$lehrer]);
 	}
 
 }

@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use DB;
 class ImpressumController extends Controller {
 
 	/*
@@ -21,7 +22,8 @@ class ImpressumController extends Controller {
 	 */
 	public function index()
 	{
-		return view('impressum');
+		$impressum = DB::select('select * from impressum where id=1') ;
+		return view('impressum',['impressum'=>$impressum]);
 	}
 
 }

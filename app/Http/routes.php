@@ -45,6 +45,11 @@ Route::get('kursuebersicht/{name}', 'KursuebersichtsController@index');
 		Route::get('kurshinzufuegen', 'KursHinzufuegenController@index');
 		Route::post('kurshinzufuegen', 'KursHinzufuegenController@datenbank');
 
+#SeitenController
+Route::get('bearbeitunglehrer', 'LehrerBearbeitungsController@show');
+Route::post('bearbeitunglehrer', 'LehrerBearbeitungsController@edit');
+Route::get('bearbeitungimpressum', 'ImpressumBearbeitungsController@show');
+Route::post('bearbeitungimpressum', 'ImpressumBearbeitungsController@edit');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
