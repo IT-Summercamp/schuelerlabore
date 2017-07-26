@@ -36,14 +36,14 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 				@if (Auth::guest())
-					<li><a href="{{ url('/') }}">Startseite</a></li>
-					<li><a href="{{ url('/schuelerlabore') }}">Schülerlabore</a></li>
-					<li><a href="{{ url('/lehrer') }}">Für Lehrer</a></li>
-					<li><a href="{{ url('/aktuelleveranstaltungen') }}">Aktuelle Veranstaltungen</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}">Schülerlabore</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}">Für Lehrer</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}">Aktuelle Veranstaltungen</a></li>
 				@else
-					<li><a href="{{ url('/') }}">Startseite</a></li>
-					<li><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
-					<li><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
+					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
 
 
 				@endif
