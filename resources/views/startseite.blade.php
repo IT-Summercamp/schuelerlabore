@@ -11,6 +11,7 @@
 									<img src="header_image.png" style="width:100%;height:100%">
 								<p><font size="3">Herzlich Willkommen bei den sächsischen Schülerlaboren, Orte zum Lernen, Experimentieren und staunen. Hier könnt ihr verschiedene Berufe kennenlernen und bekommt die Möglichkeit selbstständig zu forschen. Biologie, Physik und Chemie, aber auch Mathematik, Informatik und die Technikwissenschaften erscheinen hier nicht mehr als graue Theorie, sondern präsentieren sich als spannende Arbeitsfelder mit hohem Alltagsbezug. Die Schülerlabore ergänzen den Unterricht und eröffnen neue fachliche Perspektiven.  Auf dieser Seite könnt ihr euch über die Angebote der sächsischen Schülerlabore informieren und bei Interesse auch gleich anmelden.
 								</font></p>
+								<a href="/public/schuelerlabore" class="btn btn-primary btn-block" role="button" style="background-color:#2ECC71">Suche</a>
 							</div>
 			</div>
 		</div>
