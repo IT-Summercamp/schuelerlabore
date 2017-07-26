@@ -30,6 +30,7 @@
          <tr>
             <td><b>ID</b></td>
             <td><b>Name</b></td>
+						<td><b>Labor</b></td>
 						<td><b>E-Mail</b></td>
 						<td><b>Telefon</b></td>
 						<td><b>Website</b></td>
@@ -41,6 +42,7 @@
          <tr>
             <td>{{ $kurs->id }}</td>
             <td>{{ $kurs->name }}</td>
+						<td>{{ $kurs->labor }}</td>
 						<td>{{ $kurs->email }}</td>
 						<td>{{ $kurs->telefon }}</td>
 						<td>{{ $kurs->website }}</td>

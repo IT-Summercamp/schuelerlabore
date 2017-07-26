@@ -41,6 +41,9 @@ Route::get('laborverwaltung', 'LaborverwaltungController@index');
 #KursController
 Route::get('kursverwaltung', 'KursverwaltungController@index');
 Route::get('kursuebersicht/{name}', 'KursuebersichtsController@index');
+		Route::get('kursentfernen/{id}', 'KursEntfernungsController@index');
+		Route::get('kurshinzufuegen', 'KursHinzufuegenController@index');
+		Route::post('kurshinzufuegen', 'KursHinzufuegenController@datenbank');
 
 
 Route::controllers([
