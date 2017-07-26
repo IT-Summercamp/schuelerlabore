@@ -41,7 +41,6 @@
 					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
-					<li style="font-size : 20px;"><a href="{{ url('/') }}">Startseite</a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
 
@@ -53,7 +52,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					@else
-					<li><a href="{{ url('/benutzerverwaltung')}} ">Benutzerverwaltung</a></li>
+					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></li>
 					@endif
 				</ul>
 			</div>
