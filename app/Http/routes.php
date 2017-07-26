@@ -22,7 +22,7 @@ Route::get('home', 'HomeController@index');
 Route::get('schuelerlabore', 'LaborController@index');
 Route::get('lehrer', 'LehrerController@index');
 Route::get('aktuelleveranstaltungen', 'VeranstaltungenController@index');
-
+Route::get('impressum', 'ImpressumController@index');
 #BenutzerController
 Route::get('benutzerverwaltung', 'BenutzerverwaltungController@index');
 		Route::get('benutzerhinzufügen', 'Labore@index');

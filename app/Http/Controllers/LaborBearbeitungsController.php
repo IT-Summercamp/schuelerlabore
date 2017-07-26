@@ -11,7 +11,7 @@ class LaborBearbeitungsController extends Controller {
       return view('laborbearbeitung',['labore'=>$labore]) ;
    }
    public function edit(Request $request,$name) {
-     $name = $request->input('name');
+    $name = $request->input('name');
  		$ort = $request->input('ort');
  		$email = $request->input('email');
  		$telefon = $request->input('telefon');
