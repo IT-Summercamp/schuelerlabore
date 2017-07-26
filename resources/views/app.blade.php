@@ -29,8 +29,9 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
-					<a class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
+
 				</button>
+				<a class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
 
 			</div>
 
