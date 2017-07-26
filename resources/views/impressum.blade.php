@@ -27,8 +27,8 @@
 
 				<h2>Fotos:</h2>
 				    HZDR/André Forner,HS Mittweida/Stephan Floss, Gläsernes Labor/Sven Doering, Gläsernes Labor/Oliver Killing, ComLabBio/SBG, HTW Schülerlabor Chemie, Lernlabor Farbe/Kevin Appelhans, SchülerLab Berlin/Chris Gossmann, Netzwerk Teilchenwelt/Julia Socher, Schülerrechenzentrum/ Mathias Rauh, Lernort Albertinum, UFZ/ Sebstian Wiedling, Science meets School/ Thoma Kruse, Wunderland Physik, Hochschule Mittweida/Helmut Hammer, solaris/Wolfgang Thieme <p></p>
-				    Stand: September 2016<p></p>
-				    Logo: <p></p>
+				    Stand: September 2016<br />
+				    Logo: <br />
 				    <a href="https://pixabay.com/de/zahnr%C3%A4der-optionen-einstellungen-467261/">https://pixabay.com/de/zahnr%C3%A4der-optionen-einstellungen-467261/</a><p>
 				   <a href="https://static.vecteezy.com/system/resources/previews/000/119/138/non_2x/free-science-and-laboratory-icons-vector.jpg">https://static.vecteezy.com/system/resources/previews/000/119/138/non_2x/free-science-and-laboratory-icons-vector.jpg</a><br />
 
@@ -42,7 +42,7 @@
 				    <img src="https://www2.pic-upload.de/img/33612855/it_summercamp_group.jpg"
 				     width="500"
 				     height="350"
-				     align="center"/><p></p>
+				     align="center"/><br />
 
 				Diese Website wurde innerhalb des IT-Summercamps 2017 entwickelt und dabei unterstützt von Communardo Software GmbH, T-Mulitmedia Systems und SAP SE
 				    </div>
