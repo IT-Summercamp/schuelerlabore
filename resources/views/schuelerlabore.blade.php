@@ -34,7 +34,7 @@
                             </div>
 
                             <!-- Fach -->
-                            <div class="col-sm-4" style="margin-right: -25px">
+                            <div class="col-sm-4" style="margin-left: 25px; margin-right: -25px">
                                 <label class="panel-heading">Fach</label>
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="physik">Physik</label>
