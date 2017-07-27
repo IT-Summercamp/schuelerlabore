@@ -1,5 +1,15 @@
 @extends('admin')
+<head>
+	<style>
+	table {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 
+    width: 100%;
+}
+</style>
+</head>
 @section('content')
 @if (Auth::guest())
 <div class="container">
