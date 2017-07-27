@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 
 				</button>
-				<a class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
+				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
 
 			</div>
 
