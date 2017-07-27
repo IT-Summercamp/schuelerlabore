@@ -58,7 +58,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71;"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
