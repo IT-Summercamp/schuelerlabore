@@ -352,8 +352,106 @@
 												@endforeach
 												</div>
 												@endif
+												@if ($wert11 == 0)
+											@else
+											<a data-toggle="collapse" data-parent="#accordion2" href="#primarstufe"><div style="font-size : 180%;" class="panel-heading"><label class="btn btn-success">Primarstufe</label> Ergebnisse für Primarstufe </div></a>
 
-										
+											<div id="primarstufe" class="panel-collapse collapse">
+
+												 @foreach ($wert11 as $wert11)
+
+
+												<div class="panel-group" id="accordion12">
+											<div class="panel panel-default">
+											<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#accordion12" href="#kurs{{$wert11->id}}">
+												{{ $wert11->name }}
+
+											</h4>
+											</div>
+											<div id="kurs{{$wert11->id}}" class="panel-collapse collapse">
+											<div class="panel-body">
+											 <ul>
+
+											</ul>
+
+											</div>
+											</div>
+											</div>
+											</div>
+
+													@endforeach
+													</div>
+													@endif
+
+													@if ($wert12 == 0)
+												@else
+												<a data-toggle="collapse" data-parent="#accordion2" href="#sek1"><div style="font-size : 180%;" class="panel-heading"><label class="btn btn-success">Sek. 1</label> Ergebnisse für Sekundarstufe 1 </div></a>
+
+												<div id="sek1" class="panel-collapse collapse">
+
+													 @foreach ($wert12 as $wert12)
+
+
+													<div class="panel-group" id="accordion13">
+												<div class="panel panel-default">
+												<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion13" href="#kurs{{$wert12->id}}">
+													{{ $wert12->name }}
+
+												</h4>
+												</div>
+												<div id="kurs{{$wert12->id}}" class="panel-collapse collapse">
+												<div class="panel-body">
+												 <ul>
+
+												</ul>
+
+												</div>
+												</div>
+												</div>
+												</div>
+
+														@endforeach
+														</div>
+														@endif
+
+														@if ($wert13 == 0)
+													@else
+													<a data-toggle="collapse" data-parent="#accordion2" href="#sek2"><div style="font-size : 180%;" class="panel-heading"><label class="btn btn-success">Sek. 2</label> Ergebnisse für Sekundarstufe 2 </div></a>
+
+													<div id="sek2" class="panel-collapse collapse">
+
+														 @foreach ($wert13 as $wert13)
+
+
+														<div class="panel-group" id="accordion14">
+													<div class="panel panel-default">
+													<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion14" href="#kurs{{$wert13->id}}">
+														{{ $wert13->name }}
+
+													</h4>
+													</div>
+													<div id="kurs{{$wert13->id}}" class="panel-collapse collapse">
+													<div class="panel-body">
+													 <ul>
+
+													</ul>
+
+													</div>
+													</div>
+													</div>
+													</div>
+
+															@endforeach
+															</div>
+															@endif
+
+
 
 
 				</div>
