@@ -1,5 +1,17 @@
 @extends('app')
 
+<head>
+	<style>
+	textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+</style>
+</head>
+
 @section('content')
 <div class="container">
 		<div class="row">
