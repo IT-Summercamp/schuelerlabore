@@ -59,7 +59,7 @@
 
 
                             <!-- Ort -->
-                            <div class="col-sm-4" style="margin-right: -50px">
+                            <div class="col-sm-4" style="margin-left: 25px; margin-right: -100px">
 
                                 <label class="panel-heading">Klassenstufen</label>
                                 <div class="checkbox">
