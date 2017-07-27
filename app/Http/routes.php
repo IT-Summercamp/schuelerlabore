@@ -23,6 +23,7 @@ Route::get('schuelerlabore', 'LaborController@index');
 Route::get('lehrer', 'LehrerController@index');
 Route::get('schueler', 'SchuelerController@index');
 Route::get('aktuelleveranstaltungen', 'VeranstaltungenController@index');
+Route::post('filter', 'FilterController@index');
 Route::get('impressum', 'ImpressumController@index');
 #BenutzerController
 Route::get('benutzerverwaltung', 'BenutzerverwaltungController@index');

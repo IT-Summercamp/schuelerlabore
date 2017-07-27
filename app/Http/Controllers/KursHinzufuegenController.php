@@ -29,12 +29,15 @@ class KursHinzufuegenController extends Controller {
 	 */
 	public function index()
 	{
-    return view('kurshinzufuegen');
+		$labore = DB::select('select * from labore') ;
+    return view('kurshinzufuegen',['labore'=>$labore]);
 	}
 
 	public function datenbank(Request $request) {
 		$name = $request->input('name');
 		$labor = $request->input('labor');
+		$fach = $request->input('fach');
+		$ort = $request->input('ort');
 		$beschreibung = $request->input('beschreibung');
 		$zielgruppe = $request->input('zielgruppe');
 		$grundschule = $request->input('grundschule');
@@ -47,7 +50,7 @@ class KursHinzufuegenController extends Controller {
 		$telefon = $request->input('telefon');
 		$email = $request->input('email');
 		$website = $request->input('website');
-		DB::insert('insert into kurse (name, labor, beschreibung, zielgruppe, grundschule, foerderschule, oberschule, gymnasium, dauer, zeitraum, kosten, telefon, email, website) values(?, ?, ?, ?, ?, ?,?,?,?,?, ?,?,?, ?) ',[$name, $labor, $beschreibung, $zielgruppe, $grundschule, $foerderschule, $oberschule, $gymnasium, $dauer, $zeitraum, $kosten, $telefon, $email, $website]);
+		DB::insert('insert into kurse (name, labor, fach, ort, beschreibung, zielgruppe, grundschule, foerderschule, oberschule, gymnasium, dauer, zeitraum, kosten, telefon, email, website) values(?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?, ?,?,?, ?) ',[$name, $labor, $fach, $ort, $beschreibung, $zielgruppe, $grundschule, $foerderschule, $oberschule, $gymnasium, $dauer, $zeitraum, $kosten, $telefon, $email, $website]);
 		?><meta http-equiv="refresh" content="0; URL=/public/kursverwaltung"><?php
 	}
 

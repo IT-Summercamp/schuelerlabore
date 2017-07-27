@@ -8,11 +8,14 @@ use App\Http\Controllers\Controller;
 class KursBearbeitungsController extends Controller {
    public function show($name) {
      $kurs = DB::select('select * from kurse where name = ?',[$name]) ;
-      return view('kursbearbeitung',['kurs'=>$kurs]) ;
+     $labore = DB::select('select * from labore') ;
+      return view('kursbearbeitung',['kurs'=>$kurs, 'labore'=>$labore]) ;
    }
    public function edit(Request $request,$name) {
     $name = $request->input('name');
     $labor = $request->input('labor');
+    $fach = $request->input('fach');
+		$ort = $request->input('ort');
     $beschreibung = $request->input('beschreibung');
  		$zielgruppe = $request->input('zielgruppe');
     $grundschule = $request->input('grundschule');
@@ -27,6 +30,8 @@ class KursBearbeitungsController extends Controller {
  		$website = $request->input('website');
       DB::update('update kurse set name = ? where name = ?',[$name,$name]) ;
       DB::update('update kurse set labor = ? where name = ?',[$labor,$name]) ;
+      DB::update('update kurse set fach = ? where name = ?',[$fach,$name]) ;
+      DB::update('update kurse set ort = ? where name = ?',[$ort,$name]) ;
       DB::update('update kurse set beschreibung = ? where name = ?',[$beschreibung,$name]) ;
 	  DB::update('update kurse set zielgruppe = ? where name = ?',[$zielgruppe,$name]) ;
     DB::update('update kurse set grundschule = ? where name = ?',[$grundschule,$name]) ;

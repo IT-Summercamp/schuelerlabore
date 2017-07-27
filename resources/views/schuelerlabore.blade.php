@@ -7,6 +7,78 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Schülerlabore </div>
+				<button class="btn btn-default"data-toggle="collapse" data-target="#demo" style="margin:15px 15px 15px 15px">Filterung</button>
+				<form class="form-horizontal" role="form" method="POST" action="{{ url('filter') }}">
+					 <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+
+                    <div id="demo" class="collapse">
+
+                        <div class="row">
+
+                            <!-- schulart-->
+                            <div class="col-sm-4" style="margin-left: 25px">
+                                <label class="panel-heading">Schulart</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="grundschule">Grundschule</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="oberschule">Oberschule</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="gymnasium">Gymnasium</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="foerderschule">Förderschule</label>
+                                </div>
+                            </div>
+
+                            <!-- Fach -->
+                            <div class="col-sm-4" style="margin-right: -25px">
+                                <label class="panel-heading">Fach</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="physik">Physik</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="chemie">Chemie</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="mathematik">Mathematik</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="informatik">Informatik</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="biologie">Biologie</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="fachuebergreifend">Fachübergreifend</label>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Ort -->
+                            <div class="col-sm-4" style="margin-right: -25px">
+
+                                <label class="panel-heading">Klassenstufen</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="primarstufe">Primarstufe</label>
+                                </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox" name="sek1">Sekundarstufe 1</label>
+                                </div>
+                                 <div class="checkbox">
+                                    <label><input type="checkbox" name="sek2">Sekundarstufe 2</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+<button style="margin-left: 25px"type="submit" class="btn btn-success">Suche</button>
+                    </div>
+
+									</form>
 
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 </br>

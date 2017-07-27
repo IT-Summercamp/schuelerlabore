@@ -12,11 +12,11 @@
 			</br>
          @foreach ($kurse as $kurs)
 
-				 <div class="panel-group" id="accordion">
+				 <div class="panel-group" id="accordion2">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#kurs{{$kurs->id}}">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#kurs{{$kurs->id}}">
         {{ $kurs->name }}
 				&nbsp; @if ($kurs->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
 					@if ($kurs->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif

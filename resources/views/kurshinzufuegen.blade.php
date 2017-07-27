@@ -24,10 +24,47 @@
 									 <div class="form-group">
 		 										 <label class="col-md-4 control-label">Labor</label>
 		 										 <div class="col-md-6">
-		 													 <input type="text" class="form-control" name="labor">
+													 <div id="dropdown">
+
+																					<select name="labor">
+
+																						@foreach ($labore as $labor)
+																						<option>{{$labor->name}}</option>
+																						@endforeach
+
+																					</select>
+
+																				</div>
 		 												 </br>
 		 										 </div>
 		 									 </div>
+											 <div class="form-group">
+				 										 <label class="col-md-4 control-label">Fach</label>
+				 										 <div class="col-md-6">
+															 <div id="dropdown">
+
+																							<select name="fach">
+
+																								<option>Biologie</option>
+																								<option>Physik</option>
+																								<option>Chemie</option>
+																								<option>Technik/Informatik</option>
+																								<option>Mathematik</option>
+																								<option>Fachübergreifend</option>
+
+																							</select>
+
+																						</div>
+				 												 </br>
+				 										 </div>
+				 									 </div>
+													 <div class="form-group">
+						 										 <label class="col-md-4 control-label">Ort</label>
+						 										 <div class="col-md-6">
+						 													 <input type="text" class="form-control" name="ort">
+						 												 </br>
+						 										 </div>
+						 									 </div>
 											 <div class="form-group">
 			 											 <label class="col-md-4 control-label">Beschreibung</label>
 			 											 <div class="col-md-6">

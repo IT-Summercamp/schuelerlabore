@@ -24,7 +24,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div style="font-size : 180%;" class="panel-heading">Schuelerseite bearbeiten </div>
+				<div style="font-size : 180%;" class="panel-heading">Schülerseite bearbeiten </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
 
