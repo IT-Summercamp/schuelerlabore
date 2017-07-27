@@ -29,6 +29,7 @@
       <div class="panel-body">
 				<ul>
 					<li>Name: {{ $kurs->name }}</li>
+					<li>Beschreibung: {{ $kurs->beschreibung }}</li>
 					<li>Labor: {{ $kurs->labor }}</li>
 					<li>Zielgruppe: {{ $kurs->zielgruppe }}</li>
 					<li>Grundschule: {{ $kurs->grundschule }}</li>
