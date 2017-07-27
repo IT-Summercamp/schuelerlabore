@@ -49,6 +49,8 @@
 				     height="350"
 				     align="center" class="img-responsive"/><br />
 					 </br>
+
+					 Die Webanwendung wurde durch das Entwicklerteam von Sven Liebert, Niklas Lang und Merlin Brandner entwickelt.</br></bR>
 				Diese Website wurde innerhalb des IT-Summercamps 2017 entwickelt und dabei unterstützt von Communardo Software GmbH, T-Mulimedia Systems und SAP SE
 				    </div>
 

@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Schülerlabore </div>
-				<button class="btn btn-default"data-toggle="collapse" data-target="#demo" style="margin:15px 15px 15px 15px">Filterung</button>
+				<button class="btn btn-default"data-toggle="collapse" data-target="#demo" style="margin:15px 15px 0px 15px">Filterung</button>
 				<form class="form-horizontal" role="form" method="POST" action="{{ url('filter') }}">
 					 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -46,7 +46,7 @@
                                     <label><input type="checkbox" name="mathematik">Mathematik</label>
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" name="informatik">Informatik</label>
+                                    <label><input type="checkbox" name="informatik">Technik/Informatik</label>
                                 </div>
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="biologie">Biologie</label>
@@ -89,7 +89,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#vv{{$labor->id}}">
+        <a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion" href="#vv{{$labor->id}}">
 
 					{{$labor->name}}, {{$labor->ort}} &nbsp; <div class="btn-group"> @if ($labor->biologie == "Ja") <label class="btn btn-success">Bio</label>@endif
 					  @if ($labor->physik == "Ja") <label class="btn btn-danger">Phy</label>@endif

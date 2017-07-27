@@ -47,7 +47,9 @@
 						<td>{{ $kurs->telefon }}</td>
 						<td>{{ $kurs->website }}</td>
 						<td><a href = 'kursbearbeiten/{{ $kurs->name }}'><label class="btn btn-warning">Bearbeiten</label></a></td>
+						@if (Auth::user()->administrator == "Ja")
 						<td><a href = 'kursentfernen/{{ $kurs->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
+						@endif
          </tr>
          @endforeach
 				 <td></td>
@@ -57,7 +59,9 @@
 				 <td></td>
 				 <td></td>
 				 <td></td>
+				 @if (Auth::user()->administrator == "Ja")
 				 <td><a href = '{{ url('/kurshinzufuegen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
+				 @endif
       </table>
 
 
