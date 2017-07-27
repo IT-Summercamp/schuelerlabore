@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Entwickelt von Sven Siebert, Niklas Lang, Merlin Brandner">
 	<title> </title>
 	<style>
 	a {word-wrap: break-word;}
