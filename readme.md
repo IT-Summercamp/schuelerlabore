@@ -141,7 +141,7 @@ Navbar rechts:
 <li><a href="{{ url('/name')}} ">name</a></li>
 ```
 
-###Lizenz
+### Lizenz
 
 Teile der Webanwendungen dürfen verändert bzw. abgeändert werden. Eine Wiederverwendung ist ohne die Einwilligung von Sven Liebert, Niklas Lang und Merlin Brandner nicht gestattet.
 
