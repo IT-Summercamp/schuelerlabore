@@ -47,7 +47,7 @@
 				    <img src="/public/image/gruppe.JPG"
 				     width="500"
 				     height="350"
-				     align="center"/><br />
+				     align="center" class="img-responsive"/><br />
 					 </br>
 				Diese Website wurde innerhalb des IT-Summercamps 2017 entwickelt und dabei unterstützt von Communardo Software GmbH, T-Mulimedia Systems und SAP SE
 				    </div>
