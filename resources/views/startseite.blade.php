@@ -14,7 +14,7 @@
 
 								<img src="/public/image/Karte.PNG" style="width:100%;height:100%">
 								<img src="/public/image/Legende.JPG" style="width:100%;height:100%"></br>
-								<a href="/public/schuelerlabore" class="btn btn-primary btn-block" role="button" style="background-color:#2ECC71">Erkunde</a>
+								<a href="/public/schuelerlabore" class="btn btn-primary btn-block" role="button" style="background-color:#2ECC71">Erkunden</a>
 							</div>
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 @section('content')
 @if (Auth::guest())
 <div class="container">
