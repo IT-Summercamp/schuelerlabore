@@ -6,9 +6,13 @@ Ein Übersichtsportal für die Schülerlabore Sachsens
 ### Voraussetzungen
 
 PHP >= 5.4, PHP < 7
+
 Mcrypt PHP Extension
+
 OpenSSL PHP Extension
+
 Mbstring PHP Extension
+
 Tokenizer PHP Extension
 
 
