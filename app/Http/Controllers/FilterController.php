@@ -117,14 +117,14 @@ class FilterController extends Controller {
 
 
 											if ($sek1 == true){
-												$wert12 =  DB::select('select * from kurse where sek1="Ja 1"') ;
+												$wert12 =  DB::select('select * from kurse where sek1="Ja"') ;
 										 }
 										 else
 						 					$wert12 = "";
 
 
 												if ($sek2 == true) {
-													$wert13 =  DB::select('select * from kurse where sek2="Ja 2"') ;
+													$wert13 =  DB::select('select * from kurse where sek2="Ja"') ;
 												}
 												else
 													$wert13 = "";
