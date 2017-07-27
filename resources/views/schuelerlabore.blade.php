@@ -74,8 +74,8 @@
 
                             </div>
 
-                        </div>
-<button style="margin-left: 25px"type="submit" class="btn btn-success">Suche</button>
+                        </div></br>
+<button style="margin-top: 10px; margin-left: 25px"type="submit" class="btn btn-success">Suche</button>
                     </div>
 
 									</form>
