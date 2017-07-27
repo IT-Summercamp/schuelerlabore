@@ -37,7 +37,9 @@ class KursHinzufuegenController extends Controller {
 		$name = $request->input('name');
 		$labor = $request->input('labor');
 		$fach = $request->input('fach');
-		$ort = $request->input('ort');
+		$primarstufe = $request->input('primarstufe');
+		$sek1 = $request->input('sek1');
+		$sek2 = $request->input('sek2');
 		$beschreibung = $request->input('beschreibung');
 		$zielgruppe = $request->input('zielgruppe');
 		$grundschule = $request->input('grundschule');
@@ -50,7 +52,7 @@ class KursHinzufuegenController extends Controller {
 		$telefon = $request->input('telefon');
 		$email = $request->input('email');
 		$website = $request->input('website');
-		DB::insert('insert into kurse (name, labor, fach, ort, beschreibung, zielgruppe, grundschule, foerderschule, oberschule, gymnasium, dauer, zeitraum, kosten, telefon, email, website) values(?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?, ?,?,?, ?) ',[$name, $labor, $fach, $ort, $beschreibung, $zielgruppe, $grundschule, $foerderschule, $oberschule, $gymnasium, $dauer, $zeitraum, $kosten, $telefon, $email, $website]);
+		DB::insert('insert into kurse (name, labor, fach, primarstufe, sek1, sek2, beschreibung, zielgruppe, grundschule, foerderschule, oberschule, gymnasium, dauer, zeitraum, kosten, telefon, email, website) values(?, ?, ?, ?, ?, ?,?, ?, ?, ?,?,?,?,?, ?,?,?, ?) ',[$name, $labor, $fach, $primarstufe, $sek1, $sek2, $beschreibung, $zielgruppe, $grundschule, $foerderschule, $oberschule, $gymnasium, $dauer, $zeitraum, $kosten, $telefon, $email, $website]);
 		?><meta http-equiv="refresh" content="0; URL=/public/kursverwaltung"><?php
 	}
 

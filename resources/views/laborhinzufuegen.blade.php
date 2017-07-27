@@ -10,7 +10,9 @@
 				<div style="font-size : 180%;" class="panel-heading">Labor hinzufügen </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
-
+			 <div class="alert alert-danger">
+			 <p align="center"> <b>Bitte vergewissern Sie sich, dass der Name des Labores nicht schon vorhanden ist. Denn dann kommt es zu einem Fehler!</b></p>
+			 </div>
 		       <form class="form-horizontal" role="form" method="POST" action="{{ url('/laborhinzufuegen') }}">
 		          <input type="hidden" name="_token" value="{{ csrf_token() }}">
 

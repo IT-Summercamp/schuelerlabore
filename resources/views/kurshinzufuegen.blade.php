@@ -10,7 +10,9 @@
 				<div style="font-size : 180%;" class="panel-heading">Kurs hinzufügen </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
-
+			 <div class="alert alert-danger">
+			 <p align="center"> <b>Bitte vergewissern Sie sich, dass der Name des Kurses nicht schon vorhanden ist. Denn dann kommt es zu einem Fehler! In diesem Fall müssen Sie dem Kurs eine Nummer hinzufügen.</b></p>
+			 </div>
 		       <form class="form-horizontal" role="form" method="POST" action="{{ url('/kurshinzufuegen') }}">
 		          <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -59,12 +61,50 @@
 				 										 </div>
 				 									 </div>
 													 <div class="form-group">
-						 										 <label class="col-md-4 control-label">Ort</label>
-						 										 <div class="col-md-6">
-						 													 <input type="text" class="form-control" name="ort">
-						 												 </br>
-						 										 </div>
-						 									 </div>
+																 <label class="col-md-4 control-label">Primarstufe</label>
+																 <div class="col-md-6">
+																	 <div id="dropdown">
+
+																									<select name="primarstufe">
+
+																										<option>Ja</option>
+																										<option>Nein</option>
+																									</select>
+
+																								</div>
+																		 </br>
+																 </div>
+															 </div>
+															 <div class="form-group">
+																		 <label class="col-md-4 control-label">Sekundarstufe 1</label>
+																		 <div class="col-md-6">
+																			 <div id="dropdown">
+
+																											<select name="sek1">
+
+																												<option>Ja</option>
+																												<option>Nein</option>
+																											</select>
+
+																										</div>
+																				 </br>
+																		 </div>
+																	 </div>
+																	 <div class="form-group">
+																				 <label class="col-md-4 control-label">Sekundarstufe 2</label>
+																				 <div class="col-md-6">
+																					 <div id="dropdown">
+
+																													<select name="sek2">
+
+																														<option>Ja</option>
+																														<option>Nein</option>
+																													</select>
+
+																												</div>
+																						 </br>
+																				 </div>
+																			 </div>
 											 <div class="form-group">
 			 											 <label class="col-md-4 control-label">Beschreibung</label>
 			 											 <div class="col-md-6">

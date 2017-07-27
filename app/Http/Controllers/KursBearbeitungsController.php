@@ -15,7 +15,9 @@ class KursBearbeitungsController extends Controller {
     $name = $request->input('name');
     $labor = $request->input('labor');
     $fach = $request->input('fach');
-		$ort = $request->input('ort');
+    $primarstufe = $request->input('primarstufe');
+		$sek1 = $request->input('sek1');
+		$sek2 = $request->input('sek2');
     $beschreibung = $request->input('beschreibung');
  		$zielgruppe = $request->input('zielgruppe');
     $grundschule = $request->input('grundschule');
@@ -31,7 +33,9 @@ class KursBearbeitungsController extends Controller {
       DB::update('update kurse set name = ? where name = ?',[$name,$name]) ;
       DB::update('update kurse set labor = ? where name = ?',[$labor,$name]) ;
       DB::update('update kurse set fach = ? where name = ?',[$fach,$name]) ;
-      DB::update('update kurse set ort = ? where name = ?',[$ort,$name]) ;
+      DB::update('update kurse set primarstufe = ? where name = ?',[$primarstufe,$name]) ;
+      DB::update('update kurse set sek1 = ? where name = ?',[$sek1,$name]) ;
+      DB::update('update kurse set sek2 = ? where name = ?',[$sek2,$name]) ;
       DB::update('update kurse set beschreibung = ? where name = ?',[$beschreibung,$name]) ;
 	  DB::update('update kurse set zielgruppe = ? where name = ?',[$zielgruppe,$name]) ;
     DB::update('update kurse set grundschule = ? where name = ?',[$grundschule,$name]) ;

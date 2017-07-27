@@ -25,7 +25,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Kurs bearbeiten </div>
+				<div style="font-size : 180%;" class="panel-heading">Kurs bearbeiten </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
 
@@ -35,7 +35,7 @@
 							<div class="form-group">
 										 <label class="col-md-4 control-label">Name</label>
 										 <div class="col-md-6">
-													 <input type="text" class="form-control" name="name" value="<?php echo $kurs[0]->name; ?>">
+													 <input readonly type="text" class="form-control" name="name" value="<?php echo $kurs[0]->name; ?>">
 												 </br>
 										 </div>
 									 </div>
@@ -82,12 +82,62 @@
 				 										 </div>
 				 									 </div>
 													 <div class="form-group">
-						 										 <label class="col-md-4 control-label">Ort</label>
-						 										 <div class="col-md-6">
-						 													 <input type="text" class="form-control" name="ort">
-						 												 </br>
-						 										 </div>
-						 									 </div>
+														<label class="col-md-4 control-label">Primarstufe</label>
+														<div class="col-md-6">
+															<div id="dropdown">
+
+																							<select name="primarstufe">
+
+																								<option><?php echo $kurs[0]->primarstufe; ?></option>
+																								@if ($kurs[0]->primarstufe == "Ja")
+																								<option>Nein</option>
+																								@else
+																								<option>Ja</option>
+																								@endif
+																							</select>
+
+																						</div>
+																					</br>
+														</div>
+														</div>
+														<div class="form-group">
+ 														<label class="col-md-4 control-label">Sekundarstufe 1</label>
+ 														<div class="col-md-6">
+ 															<div id="dropdown">
+
+ 																							<select name="sek1">
+
+ 																								<option><?php echo $kurs[0]->sek1; ?></option>
+ 																								@if ($kurs[0]->sek1 == "Ja")
+ 																								<option>Nein</option>
+ 																								@else
+ 																								<option>Ja</option>
+ 																								@endif
+ 																							</select>
+
+ 																						</div>
+ 																					</br>
+ 														</div>
+ 														</div>
+														<div class="form-group">
+ 														<label class="col-md-4 control-label">Sekundarstufe 2</label>
+ 														<div class="col-md-6">
+ 															<div id="dropdown">
+
+ 																							<select name="sek2">
+
+ 																								<option><?php echo $kurs[0]->sek2; ?></option>
+ 																								@if ($kurs[0]->sek2 == "Ja")
+ 																								<option>Nein</option>
+ 																								@else
+ 																								<option>Ja</option>
+ 																								@endif
+ 																							</select>
+
+ 																						</div>
+ 																					</br>
+ 														</div>
+ 														</div>
 									 <div class="form-group">
 		 										 <label class="col-md-4 control-label">Beschreibung</label>
 		 										 <div class="col-md-6">
