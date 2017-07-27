@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Nicht angemeldet</div>
+				<div style="font-size : 180%;" class="panel-heading">Nicht angemeldet</div>
 
 				<div class="panel-body">
 					<div class="alert alert-danger">
@@ -25,7 +25,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Benutzerverwaltung - {{Auth::user()->name}} </div>
+				<div style="font-size : 180%;" class="panel-heading">Benutzerverwaltung - {{Auth::user()->name}} </div>
 
 				<table class="table" id="table">
          <tr>
@@ -72,7 +72,7 @@
 		 <div class="row">
 			 <div class="col-md-10 col-md-offset-1">
 				 <div class="panel panel-default">
-					 <div class="panel-heading">Keine Berechtigung</div>
+					 <div style="font-size : 180%;" class="panel-heading">Keine Berechtigung</div>
 
 					 <div class="panel-body">
 						 <div class="alert alert-danger">
