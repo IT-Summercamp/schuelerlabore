@@ -19,12 +19,12 @@
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#vv{{$labor->id}}">
 
-					{{$labor->name}}, {{$labor->ort}} &nbsp; @if ($labor->biologie == "Ja") <label class="btn btn-success">Bio</label>@endif
+					{{$labor->name}}, {{$labor->ort}} &nbsp; <div class="btn-group"> @if ($labor->biologie == "Ja") <label class="btn btn-success">Bio</label>@endif
 					  @if ($labor->physik == "Ja") <label class="btn btn-danger">Phy</label>@endif
 					  @if ($labor->chemie == "Ja") <label class="btn btn-warning">Ch</label>@endif
 					  @if ($labor->technikinformatik == "Ja") <label class="btn btn-info">TC/Info</label>@endif
 					  @if ($labor->mathematik == "Ja") <label class="btn btn-primary">Ma</label>@endif
-					  @if ($labor->fachuebergreifend == "Ja") <label class="btn btn-default">Übergreifend</label>@endif
+					  @if ($labor->fachuebergreifend == "Ja") <label class="btn btn-default">Übergreifend</label>@endif</div>
 
 
 				</a>
