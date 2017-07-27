@@ -25,11 +25,7 @@
 
 				<div style="font-size : 180%;" class="panel-heading">Kursverwaltung</div>
 
-				<table style="-webkit-box-sizing: border-box;
-		    -moz-box-sizing: border-box;
-		    box-sizing: border-box;
-
-		    width: 100%;"class="table" id="table">
+				<table style="display: table"class="table" id="table">
          <tr>
             <td><b>ID</b></td>
             <td><b>Name</b></td>
