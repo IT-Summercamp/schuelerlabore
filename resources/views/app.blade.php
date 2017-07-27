@@ -5,7 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> </title>
-
+	<style>
+	a {word-wrap: break-word;}
+	</style>
 	<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css')}}">
@@ -58,7 +60,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71;"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
