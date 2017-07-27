@@ -102,14 +102,6 @@
   ga('send', 'pageview');
 
 </script>
-	<footer class="footer">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-
-						</ul>
-				</div>
-      </div>
-    </footer>
+	
 </body>
 </html>
