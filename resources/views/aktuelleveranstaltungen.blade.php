@@ -1,6 +1,6 @@
 @extends('app')
 
-<header>
+<head>
 	<style>
 	.responsiveCal {
 
@@ -14,7 +14,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
 
 }
 	</style>
-</header>
+</head>
 
 @section('content')
 <div class="container">
