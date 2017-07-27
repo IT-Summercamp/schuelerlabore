@@ -14,10 +14,13 @@ Tokenizer PHP Extension
 
 ### Installation
 
-Dateien in das Hauptverzeichnis hochladen
-database/laravel.sql Datei in die Datenbank einspeisen
-.env Datei bearbeiten (Datenbankdaten + E-Maildaten)
-http://ihredomain.de/public aufrufen
+1. Dateien in das Hauptverzeichnis hochladen
+
+2. database/laravel.sql Datei in die Datenbank einspeisen
+
+3. .env Datei bearbeiten (Datenbankdaten + E-Maildaten)
+
+4. http://ihredomain.de/public aufrufen
 
 
 ## Neuen Reiter im Menü hinzufügen
@@ -134,7 +137,7 @@ Navbar rechts:
 <li><a href="{{ url('/name')}} ">name</a></li>
 ```
 
-#Lizenz
+###Lizenz
 
 Teile der Webanwendungen dürfen verändert bzw. abgeändert werden. Eine Wiederverwendung ist ohne die Einwilligung von Sven Liebert, Niklas Lang und Merlin Brandner nicht gestattet.
 
