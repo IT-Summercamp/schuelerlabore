@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Nicht angemeldet</div>
+				<div style="font-size : 180%;" class="panel-heading">Nicht angemeldet</div>
 
 				<div class="panel-body">
 					<div class="alert alert-danger">
@@ -24,7 +24,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Lehrerseite bearbeiten </div>
+				<div style="font-size : 180%;" class="panel-heading">Lehrerseite bearbeiten </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
 
@@ -35,7 +35,7 @@
 										 <label class="col-md-4 control-label">Text</label>
 										 <div class="col-md-6">
 													 <input type="text" class="form-control" name="text" value="<?php echo $lehrer[0]->text; ?>">
-										
+
 												 </br>
 										 </div>
 									 </div>
@@ -65,7 +65,7 @@
 		 <div class="row">
 			 <div class="col-md-10 col-md-offset-1">
 				 <div class="panel panel-default">
-					 <div class="panel-heading">Keine Berechtigung</div>
+					 <div  style="font-size : 180%;" class="panel-heading">Keine Berechtigung</div>
 
 					 <div class="panel-body">
 						 <div class="alert alert-danger">

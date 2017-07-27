@@ -7,7 +7,7 @@
 
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Kursübersicht</div>
+				<div style="font-size : 180%;" class="panel-heading">Kursübersicht</div>
 
 			</br>
          @foreach ($kurse as $kurs)

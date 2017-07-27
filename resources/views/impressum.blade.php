@@ -6,7 +6,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Impressum </div>
+				<div style="font-size : 180%;" class="panel-heading">Impressum </div>
 <div class="panel-body">
 				<body bgcolor="white">
 

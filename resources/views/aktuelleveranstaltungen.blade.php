@@ -22,7 +22,7 @@ position: absolute; top:0; left: 0; width: 100%; height: 100%;
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Aktuelle Veranstaltungen </div>
+				<div style="font-size : 180%;" class="panel-heading">Aktuelle Veranstaltungen </div>
 				<div class="panel-body">
 					<div class="responsiveCal">
 

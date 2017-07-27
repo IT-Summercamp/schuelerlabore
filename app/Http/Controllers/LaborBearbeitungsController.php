@@ -35,6 +35,6 @@ class LaborBearbeitungsController extends Controller {
     DB::update('update labore set technikinformatik = ? where name = ?',[$technikinformatik,$name]) ;
     DB::update('update labore set mathematik = ? where name = ?',[$mathematik,$name]) ;
     DB::update('update labore set fachuebergreifend = ? where name = ?',[$fachuebergreifend,$name]) ;
-	  ?><meta http-equiv="refresh" content="0; URL=..\laborverwaltung"><?php
+	  ?><meta http-equiv="refresh" content="0; URL=/public/laborverwaltung"><?php
    }
 }

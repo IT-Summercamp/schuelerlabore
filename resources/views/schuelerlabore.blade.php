@@ -6,7 +6,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Schülerlabore </div>
+				<div style="font-size : 180%;" class="panel-heading">Schülerlabore </div>
 
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 </br>

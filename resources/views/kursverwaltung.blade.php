@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">Nicht angemeldet</div>
+				<div style="font-size : 180%;" class="panel-heading">Nicht angemeldet</div>
 
 				<div class="panel-body">
 					<div class="alert alert-danger">
@@ -24,7 +24,7 @@
 
 			<div class="panel panel-default">
 
-				<div class="panel-heading">Kursverwaltung</div>
+				<div style="font-size : 180%;" class="panel-heading">Kursverwaltung</div>
 
 				<table class="table" id="table">
          <tr>
