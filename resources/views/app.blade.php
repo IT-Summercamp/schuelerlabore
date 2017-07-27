@@ -41,14 +41,14 @@
 
 					<li style="font-size : 20px;" ><a href="{{ url('/') }}"></a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
+					<li style="font-size : 20px;"><a href="{{ url('/schueler') }}"><font color=white>Für Schüler</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
 					<li style="font-size : 20px;"><a href="{{ url('/home')}} "><font color=white>Startseite</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/bearbeitunglehrer')}} "><font color=white>Seitenbearbeitung Lehrer</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/bearbeitungimpressum')}} "><font color=white>Seitenbearbeitung Impressum</a></font></li>
+
 
 
 				@endif
@@ -69,8 +69,11 @@
 					<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
+								<li><a href="{{ url('/bearbeitunglehrer')}} ">Seitenbearbeitung Lehrer</a></li>
+								<li><a href="{{ url('/bearbeitungschueler')}} ">Seitenbearbeitung Schüler</a></li>
+								<li><a href="{{ url('/bearbeitungimpressum')}} ">Seitenbearbeitung Impressum</a></li>
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
+								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
 							</ul>
 						</li>
 					@endif
@@ -89,7 +92,7 @@
       <div class="container">
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<p>Version 1.0</p>
+							<p>Version 1.1</p>
 						</ul>
 				</div>
       </div>

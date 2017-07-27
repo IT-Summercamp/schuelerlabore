@@ -21,6 +21,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('schuelerlabore', 'LaborController@index');
 Route::get('lehrer', 'LehrerController@index');
+Route::get('schueler', 'SchuelerController@index');
 Route::get('aktuelleveranstaltungen', 'VeranstaltungenController@index');
 Route::get('impressum', 'ImpressumController@index');
 #BenutzerController
@@ -52,6 +53,8 @@ Route::get('bearbeitunglehrer', 'LehrerBearbeitungsController@show');
 Route::post('bearbeitunglehrer', 'LehrerBearbeitungsController@edit');
 Route::get('bearbeitungimpressum', 'ImpressumBearbeitungsController@show');
 Route::post('bearbeitungimpressum', 'ImpressumBearbeitungsController@edit');
+Route::get('bearbeitungschueler', 'SchuelerBearbeitungsController@show');
+Route::post('bearbeitungschueler', 'SchuelerBearbeitungsController@edit');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
