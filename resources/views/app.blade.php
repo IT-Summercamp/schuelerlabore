@@ -26,9 +26,9 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="icon-bar" style="background-color:white;"></span>
+					<span class="icon-bar" style="background-color:white;"></span>
+					<span class="icon-bar" style="background-color:white;"></span>
 
 				</button>
 				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
