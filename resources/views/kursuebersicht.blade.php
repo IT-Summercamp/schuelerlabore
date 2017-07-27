@@ -18,10 +18,10 @@
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#kurs{{$kurs->id}}">
         {{ $kurs->name }}
-				&nbsp; @if ($kurs->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+				&nbsp; <div class="btn-group"> @if ($kurs->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
 					@if ($kurs->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
 					@if ($kurs->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
-					@if ($kurs->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif
+					@if ($kurs->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
 			</a>
       </h4>
     </div>
