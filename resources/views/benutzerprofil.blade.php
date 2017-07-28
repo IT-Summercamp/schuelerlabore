@@ -48,7 +48,7 @@
 							 </br>
 					 </div>
 					 </div>
-
+@if($users[0]->administrator != "Sven Liebert")
 					 <div class="form-group">
 					 	<label class="col-md-4 control-label">Administrator</label>
 					 	<div class="col-md-6">
@@ -68,7 +68,7 @@
 													</br>
 					 	</div>
 					 	</div>
-
+@endif
 					 <div class="form-group">
 						 <div class="col-md-6 col-md-offset-4">
 							 <button type="submit" class="btn btn-success" >
