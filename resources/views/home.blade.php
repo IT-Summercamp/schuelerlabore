@@ -36,7 +36,7 @@ Benutzer:	schuelerlaboresachsen@gmail.com</br>
 Passwort: Schuelerlabore</br></br>
 Tragen Sie das betreffende Ereignis in den Google-Kalender ein. Es wird anschließend automatisch auf der Homepage der sächsischen Schülerlabore unter Aktuelle Veranstaltungen ausgestellt.
 </br></br>
-<a href="https://github.com/IT-Summercamp/schuelerlabore/blob/master/readme.md">Hier wichtige Hinweise in der Dokumentation lesen</a>
+<a href="https://it-summercamp.github.io/schuelerlabore/">Hier wichtige Hinweise in der Dokumentation lesen</a>
 
 </div>
 

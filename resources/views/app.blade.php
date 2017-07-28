@@ -75,7 +75,7 @@
 								<li><a href="{{ url('/bearbeitunglehrer')}} ">Seitenbearbeitung Lehrer</a></li>
 								<li><a href="{{ url('/bearbeitungschueler')}} ">Seitenbearbeitung Schüler</a></li>
 								<li><a href="{{ url('/bearbeitungimpressum')}} ">Seitenbearbeitung Impressum</a></li>
-								<li><a href="https://github.com/IT-Summercamp/schuelerlabore/blob/master/readme.md ">Readme/Dokumentation</a></li>
+								<li><a href="https://it-summercamp.github.io/schuelerlabore/ ">Readme/Dokumentation</a></li>
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
 								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
 							</ul>
@@ -102,6 +102,6 @@
   ga('send', 'pageview');
 
 </script>
-	
+
 </body>
 </html>
