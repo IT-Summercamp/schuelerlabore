@@ -69,14 +69,18 @@
 							</ul>
 						</li>
 					@else
+					@if (Auth::user()->administrator == "Ja")
 					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></font></li>
+					@endif
 					<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
+								@if (Auth::user()->administrator == "Ja")
 								<li><a href="{{ url('/bearbeitunglehrer')}} ">Seitenbearbeitung Lehrer</a></li>
 								<li><a href="{{ url('/bearbeitungschueler')}} ">Seitenbearbeitung Schüler</a></li>
 								<li><a href="{{ url('/bearbeitungimpressum')}} ">Seitenbearbeitung Impressum</a></li>
 								<li><a href="https://github.com/IT-Summercamp/schuelerlabore/blob/master/readme.md ">Readme/Dokumentation</a></li>
+								@endif
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
 								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
 							</ul>
@@ -103,6 +107,6 @@
   ga('send', 'pageview');
 
 </script>
-	
+
 </body>
 </html>

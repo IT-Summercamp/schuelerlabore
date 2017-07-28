@@ -1,6 +1,23 @@
 @extends('admin')
 
 @section('content')
+@if (Auth::user()->schuelerlabor == "Kein Schülerlabor" && Auth::user()->administrator != "Ja")
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div style="font-size : 180%;" class="panel-heading">Keine Berechtigung</div>
+
+				<div class="panel-body">
+					<div class="alert alert-danger">
+				 <p align="center"> <b>Sie haben keine Berechtigung diese Seite aufzurufen!</b></p>
+			 </div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+@else
 <div class="container">
 
 	<div class="row">
@@ -26,6 +43,7 @@
 									 <div class="form-group">
 		 										 <label class="col-md-4 control-label">Labor</label>
 		 										 <div class="col-md-6">
+													 @if (Auth::user()->administrator == "Ja")
 													 <div id="dropdown">
 
 																					<select name="labor">
@@ -37,7 +55,19 @@
 																					</select>
 
 																				</div>
-		 												 </br>
+																				@elseif (Auth::user()->schuelerlabor != "Kein Schülerlabor")
+																				<div id="dropdown">
+
+						 																					<select name="labor">
+
+						 																						<option>{{Auth::user()->schuelerlabor}}</option>
+
+
+						 																					</select>
+
+						 																				</div>
+																										@endif
+														 </br>
 		 										 </div>
 		 									 </div>
 											 <div class="form-group">
@@ -250,4 +280,5 @@
 		</div>
 	</div>
 </div>
+@endif
 @endsection

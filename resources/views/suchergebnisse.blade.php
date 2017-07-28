@@ -22,10 +22,15 @@
 			<h4 class="panel-title">
 				<a  style="text-decoration: none" data-toggle="collapse" data-parent="#accordion2" href="#kurs{{$wert1->id}}">
 				{{ $wert1->name }} - {{ $wert1->labor }}
-			 &nbsp; <div class="btn-group">@if ($wert1->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
-				 @if ($wert1->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
-				 @if ($wert1->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
-				 @if ($wert1->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div
+			 &nbsp; <div class="btn-group">@if ($wert1->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+				 @if ($wert1->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+				 @if ($wert1->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+				 @if ($wert1->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+			 @if ($wert1->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+		 @if ($wert1->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
+				 &nbsp; <div class="btn-group">@if ($wert1->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+				 @if ($wert1->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+				 @if ($wert1->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 			</h4>
 		</div></a>
@@ -73,10 +78,15 @@
  	 			<h4 class="panel-title">
  	 				<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion3" href="#kurs--{{$wert2->id}}">
  	 				{{ $wert2->name }} - {{ $wert2->labor }}
- 	 			 &nbsp;<div class="btn-group"> @if ($wert2->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
- 	 				 @if ($wert2->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
- 	 				 @if ($wert2->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
- 	 				 @if ($wert2->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+					&nbsp; <div class="btn-group">@if ($wert2->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+ 					 @if ($wert2->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+ 					 @if ($wert2->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+ 					 @if ($wert2->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+ 				 @if ($wert2->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+ 			 @if ($wert2->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
+ 					 &nbsp; <div class="btn-group">@if ($wert2->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+ 					 @if ($wert2->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+ 					 @if ($wert2->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
  	 			</h4>
 			</div></a>
@@ -125,10 +135,15 @@
  	 			<h4 class="panel-title">
  	 				<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion4" href="#kurs-{{$wert3->id}}">
  	 				{{ $wert3->name }} - {{ $wert3->labor }}
- 	 			 &nbsp; <div class="btn-group">@if ($wert3->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
- 	 				 @if ($wert3->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
- 	 				 @if ($wert3->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
- 	 				 @if ($wert3->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+					&nbsp; <div class="btn-group">@if ($wert3->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+ 					@if ($wert3->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+ 					@if ($wert3->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+ 					@if ($wert3->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+ 				@if ($wert3->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+ 			@if ($wert3->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
+ 					&nbsp; <div class="btn-group">@if ($wert3->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+ 					@if ($wert3->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+ 					@if ($wert3->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
  	 			</h4>
 			</div></a>
@@ -176,10 +191,15 @@
 	 	 			<h4 class="panel-title">
 	 	 				<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion5" href="#kurs_{{$wert4->id}}">
 	 	 				{{ $wert4->name }} - {{ $wert4->labor }}
-	 	 			 &nbsp; <div class="btn-group">@if ($wert4->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
-	 	 				 @if ($wert4->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
-	 	 				 @if ($wert4->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
-	 	 				 @if ($wert4->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+						&nbsp; <div class="btn-group">@if ($wert4->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+   					@if ($wert4->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+   					@if ($wert4->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+   					@if ($wert4->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+   				@if ($wert4->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+   			@if ($wert4->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
+   					&nbsp; <div class="btn-group">@if ($wert4->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+   					@if ($wert4->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+   					@if ($wert4->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 	 	 			</h4>
 				</div></a>
@@ -227,6 +247,13 @@
 					<h4 class="panel-title">
 						<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion6" href="#kurs---{{$wert5->id}}">
 						{{ $wert5->name }} - {{ $wert5->labor }}
+						&nbsp; <div class="btn-group">@if ($wert5->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+		 				 @if ($wert5->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+		 				 @if ($wert5->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+		 				 @if ($wert5->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+						 &nbsp; <div class="btn-group">@if ($wert5->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+ 		 				 @if ($wert5->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+ 		 				 @if ($wert5->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 					</h4>
 				</div></a>
@@ -273,6 +300,13 @@
 						<h4 class="panel-title">
 							<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion7" href="#kurs__{{$wert6->id}}">
 							{{ $wert6->name }} - {{ $wert6->labor }}
+							&nbsp; <div class="btn-group">@if ($wert6->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+			 				 @if ($wert6->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+			 				 @if ($wert6->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+			 				 @if ($wert6->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+							 &nbsp; <div class="btn-group">@if ($wert6->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+	 		 				 @if ($wert6->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+	 		 				 @if ($wert6->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 						</h4>
 					</div></a>
@@ -320,6 +354,13 @@
 							<h4 class="panel-title">
 								<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion8" href="#kurs___{{$wert7->id}}">
 								{{ $wert7->name }} - {{ $wert7->labor }}
+								&nbsp; <div class="btn-group">@if ($wert7->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+				 				 @if ($wert7->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+				 				 @if ($wert7->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+				 				 @if ($wert7->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+								 &nbsp; <div class="btn-group">@if ($wert7->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+		 		 				 @if ($wert7->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+		 		 				 @if ($wert7->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 							</h4>
 						</div></a>
@@ -367,6 +408,13 @@
 								<h4 class="panel-title">
 									<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion9" href="#kurs----{{$wert8->id}}">
 									{{ $wert8->name }} - {{ $wert8->labor }}
+									&nbsp; <div class="btn-group">@if ($wert8->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+					 				 @if ($wert8->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+					 				 @if ($wert8->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+					 				 @if ($wert8->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+									 &nbsp; <div class="btn-group">@if ($wert8->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+			 		 				 @if ($wert8->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+			 		 				 @if ($wert8->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 								</h4>
 							</div></a>
@@ -414,6 +462,13 @@
 									<h4 class="panel-title">
 										<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion10" href="#kurs____{{$wert9->id}}">
 										{{ $wert9->name }} - {{ $wert9->labor }}
+										&nbsp; <div class="btn-group">@if ($wert9->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+						 				 @if ($wert9->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+						 				 @if ($wert9->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+						 				 @if ($wert9->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+										 &nbsp; <div class="btn-group">@if ($wert9->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+										@if ($wert9->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+										@if ($wert9->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 									</h4>
 								</div></a>
@@ -461,6 +516,13 @@
 										<h4 class="panel-title">
 											<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion11" href="#kurs-----{{$wert10->id}}">
 											{{ $wert10->name }} - {{ $wert10->labor }}
+											&nbsp; <div class="btn-group">@if ($wert10->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+							 				 @if ($wert10->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+							 				 @if ($wert10->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+							 				 @if ($wert10->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+											 &nbsp; <div class="btn-group">@if ($wert10->primarstufe == "Ja") <label class="btn btn-warning">P</label>@endif
+											@if ($wert10->sek1 == "Ja") <label class="btn btn-danger">Sek. 1</label>@endif
+											@if ($wert10->sek2 == "Ja") <label class="btn btn-success">Sek. 2</label>@endif</div>
 
 										</h4>
 									</div></a>
@@ -494,7 +556,7 @@
 												@endif
 												@if ($wert11 == 0)
 											@else
-											<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion2" href="#primarstufe"><div style="font-size : 150%;" class="panel-heading"><label class="btn btn-success">P</label> Ergebnisse für Primarstufe </div></a>
+											<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion2" href="#primarstufe"><div style="font-size : 150%;" class="panel-heading"><label class="btn btn-warning">P</label> Ergebnisse für Primarstufe </div></a>
 
 											<div id="primarstufe" class="panel-collapse collapse">
 
@@ -507,6 +569,16 @@
 											<h4 class="panel-title">
 												<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion12" href="#kurs_____{{$wert11->id}}">
 												{{ $wert11->name }} - {{ $wert11->labor }}
+												&nbsp; <div class="btn-group">@if ($wert11->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+								 				 @if ($wert11->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+								 				 @if ($wert11->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+								 				 @if ($wert11->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+												 &nbsp; <div class="btn-group">@if ($wert11->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+							  					 @if ($wert11->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+							  					 @if ($wert11->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+							  					 @if ($wert11->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+							  				 @if ($wert11->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+							  			 @if ($wert11->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
 
 											</h4>
 										</div></a>
@@ -541,7 +613,7 @@
 
 													@if ($wert12 == 0)
 												@else
-												<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion2" href="#sek1"><div style="font-size : 150%;" class="panel-heading"><label class="btn btn-success">Sek. 1</label> Ergebnisse für Sekundarstufe 1 </div></a>
+												<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion2" href="#sek1"><div style="font-size : 150%;" class="panel-heading"><label class="btn btn-danger">Sek. 1</label> Ergebnisse für Sekundarstufe 1 </div></a>
 
 												<div id="sek1" class="panel-collapse collapse">
 
@@ -554,6 +626,16 @@
 												<h4 class="panel-title">
 													<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion13" href="#kurs------{{$wert12->id}}">
 													{{ $wert12->name }} - {{ $wert12->labor }}
+													&nbsp; <div class="btn-group">@if ($wert12->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+									 				 @if ($wert12->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+									 				 @if ($wert12->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+									 				 @if ($wert12->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+													 &nbsp; <div class="btn-group">@if ($wert12->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+								  					 @if ($wert12->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+								  					 @if ($wert12->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+								  					 @if ($wert12->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+								  				 @if ($wert12->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+								  			 @if ($wert12->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
 
 												</h4>
 											</div></a>
@@ -601,6 +683,16 @@
 													<h4 class="panel-title">
 														<a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion14" href="#kurs______{{$wert13->id}}">
 														{{ $wert13->name }} - {{ $wert13->labor }}
+														&nbsp; <div class="btn-group">@if ($wert13->grundschule == "Ja") <label class="btn btn-success">GS</label>@endif
+										 				 @if ($wert13->foerderschule == "Ja") <label class="btn btn-danger">FS</label>@endif
+										 				 @if ($wert13->oberschule == "Ja") <label class="btn btn-warning">OS</label>@endif
+										 				 @if ($wert13->gymnasium == "Ja") <label class="btn btn-info">GY</label>@endif</div>
+														 &nbsp; <div class="btn-group">@if ($wert13->fach == "Physik") <label class="btn btn-danger">Phy</label>@endif
+									  					 @if ($wert13->fach == "Chemie") <label class="btn btn-warning">Ch</label>@endif
+									  					 @if ($wert13->fach == "Mathematik") <label class="btn btn-primary">Ma</label>@endif
+									  					 @if ($wert13->fach == "Informatik") <label class="btn btn-info">TC/Info</label>@endif
+									  				 @if ($wert13->fach == "Biologie") <label class="btn btn-success">Bio</label>@endif
+									  			 @if ($wert13->fach == "Fachübergreifend") <label class="btn btn-default">Übergreifend</label>@endif</div>
 
 													</h4>
 												</div></a>

@@ -45,8 +45,10 @@
 						<td>{{ $kurs->email }}</td>
 						<td>{{ $kurs->telefon }}</td>
 						<td>{{ $kurs->website }}</td>
+						@if (Auth::user()->schuelerlabor == $kurs->labor || Auth::user()->administrator == "Ja")
 						<td><a href = 'kursbearbeiten/{{ $kurs->name }}'><label class="btn btn-warning">Bearbeiten</label></a></td>
-						@if (Auth::user()->administrator == "Ja")
+						@endif
+						@if (Auth::user()->schuelerlabor == $kurs->labor || Auth::user()->administrator == "Ja")
 						<td><a href = 'kursentfernen/{{ $kurs->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
 						@endif
          </tr>
@@ -58,9 +60,9 @@
 				 <td></td>
 				 <td></td>
 				 <td></td>
-				 @if (Auth::user()->administrator == "Ja")
+
 				 <td><a href = '{{ url('/kurshinzufuegen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
-				 @endif
+
       </table>
 
 

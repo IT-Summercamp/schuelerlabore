@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 
 @section('content')
 <div class="container">
@@ -38,6 +38,8 @@
 					 <div class="col-md-6">
 					 		 <div id="dropdown">
 					 			 <select name="schuelerlabor">
+									 <option><?php echo$users[0]->schuelerlabor; ?></option>
+									 <option disabled>---</option>
 									 <option>Kein Schülerlabor</option>
 					 				 @foreach ($labore as $labor)
 					 				 <option>{{$labor->name}}</option>@endforeach
