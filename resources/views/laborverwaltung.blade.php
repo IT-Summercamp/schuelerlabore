@@ -45,8 +45,10 @@
 						<td>{{ $labor->email }}</td>
 						<td>{{ $labor->telefon }}</td>
 						<td>{{ $labor->website }}</td>
-						@if (Auth::user()->administrator == "Ja")
+						@if (Auth::user()->schuelerlabor == $labor->name || Auth::user()->administrator == "Ja")
 						<td><a href = 'laborbearbeiten/{{ $labor->name }}'><label class="btn btn-warning">Bearbeiten</label></a></td>
+						@endif
+						@if (Auth::user()->administrator == "Ja")
 						<td><a href = 'laborentfernen/{{ $labor->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
 						@else
 						<td></td>
