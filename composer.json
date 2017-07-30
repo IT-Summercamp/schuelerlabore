@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "5.0.*"
+		"laravel/framework": "5.0.*",
+		"cmgmyr/messenger": "^2.14",
+		"aginev/search-filters": "^0.0.7"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",

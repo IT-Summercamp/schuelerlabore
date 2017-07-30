@@ -14,4 +14,5 @@ return array(
     'Illuminate\\' => array($vendorDir . '/laravel/framework/src/Illuminate'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
     'App\\' => array($baseDir . '/app'),
+    'Aginev\\SearchFilters\\' => array($vendorDir . '/aginev/search-filters/src'),
 );

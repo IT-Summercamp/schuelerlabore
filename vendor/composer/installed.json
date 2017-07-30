@@ -288,12 +288,12 @@
         "target-dir": "Symfony/Component/Routing",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Routing.git",
+            "url": "https://github.com/symfony/routing.git",
             "reference": "bda1c3c67f2a33bbeabb1d321feaf626a0ca5698"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Routing/zipball/bda1c3c67f2a33bbeabb1d321feaf626a0ca5698",
+            "url": "https://api.github.com/repos/symfony/routing/zipball/bda1c3c67f2a33bbeabb1d321feaf626a0ca5698",
             "reference": "bda1c3c67f2a33bbeabb1d321feaf626a0ca5698",
             "shasum": ""
         },
@@ -407,12 +407,12 @@
         "target-dir": "Symfony/Component/HttpFoundation",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/HttpFoundation.git",
+            "url": "https://github.com/symfony/http-foundation.git",
             "reference": "8fa63d614d56ccfe033e30411d90913cfc483ff6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/8fa63d614d56ccfe033e30411d90913cfc483ff6",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8fa63d614d56ccfe033e30411d90913cfc483ff6",
             "reference": "8fa63d614d56ccfe033e30411d90913cfc483ff6",
             "shasum": ""
         },
@@ -462,12 +462,12 @@
         "target-dir": "Symfony/Component/EventDispatcher",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
             "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f75989f3ab2743a82fe0b03ded2598a2b1546813",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/f75989f3ab2743a82fe0b03ded2598a2b1546813",
             "reference": "f75989f3ab2743a82fe0b03ded2598a2b1546813",
             "shasum": ""
         },
@@ -562,12 +562,12 @@
         "target-dir": "Symfony/Component/Debug",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Debug.git",
+            "url": "https://github.com/symfony/debug.git",
             "reference": "150c80059c3ccf68f96a4fceb513eb6b41f23300"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Debug/zipball/150c80059c3ccf68f96a4fceb513eb6b41f23300",
+            "url": "https://api.github.com/repos/symfony/debug/zipball/150c80059c3ccf68f96a4fceb513eb6b41f23300",
             "reference": "150c80059c3ccf68f96a4fceb513eb6b41f23300",
             "shasum": ""
         },
@@ -624,12 +624,12 @@
         "target-dir": "Symfony/Component/HttpKernel",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/HttpKernel.git",
+            "url": "https://github.com/symfony/http-kernel.git",
             "reference": "27abf3106d8bd08562070dd4e2438c279792c434"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/27abf3106d8bd08562070dd4e2438c279792c434",
+            "url": "https://api.github.com/repos/symfony/http-kernel/zipball/27abf3106d8bd08562070dd4e2438c279792c434",
             "reference": "27abf3106d8bd08562070dd4e2438c279792c434",
             "shasum": ""
         },
@@ -752,12 +752,12 @@
         "target-dir": "Symfony/Component/Console",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Console.git",
+            "url": "https://github.com/symfony/console.git",
             "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
+            "url": "https://api.github.com/repos/symfony/console/zipball/e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
             "reference": "e44154bfe3e41e8267d7a3794cd9da9a51cfac34",
             "shasum": ""
         },
@@ -1550,12 +1550,12 @@
         "target-dir": "Symfony/Component/Filesystem",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Filesystem.git",
+            "url": "https://github.com/symfony/filesystem.git",
             "reference": "a1f566d1f92e142fa1593f4555d6d89e3044a9b7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Filesystem/zipball/a1f566d1f92e142fa1593f4555d6d89e3044a9b7",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/a1f566d1f92e142fa1593f4555d6d89e3044a9b7",
             "reference": "a1f566d1f92e142fa1593f4555d6d89e3044a9b7",
             "shasum": ""
         },
@@ -2881,6 +2881,103 @@
             "phpunit",
             "testing",
             "xunit"
+        ]
+    },
+    {
+        "name": "cmgmyr/messenger",
+        "version": "2.14.1",
+        "version_normalized": "2.14.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cmgmyr/laravel-messenger.git",
+            "reference": "5f2993c33c9360d5ff9baa20fcfa9407ddf3e27b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cmgmyr/laravel-messenger/zipball/5f2993c33c9360d5ff9baa20fcfa9407ddf3e27b",
+            "reference": "5f2993c33c9360d5ff9baa20fcfa9407ddf3e27b",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/config": "~5.0",
+            "illuminate/database": "~5.0",
+            "illuminate/support": "~5.0",
+            "nesbot/carbon": "~1.0",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "adamwathan/faktory": "0.3.*",
+            "friendsofphp/php-cs-fixer": "^1.11",
+            "orchestra/testbench": "~3.0",
+            "phpunit/phpunit": "4.*|5.*"
+        },
+        "time": "2017-05-08T18:55:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Cmgmyr\\Messenger\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Gmyr",
+                "email": "cmgmyr@gmail.com",
+                "homepage": "https://github.com/cmgmyr",
+                "role": "Developer"
+            }
+        ],
+        "description": "Simple user messaging tool for Laravel",
+        "keywords": [
+            "Messenger",
+            "laravel",
+            "messaging",
+            "user messaging"
+        ]
+    },
+    {
+        "name": "aginev/search-filters",
+        "version": "v0.0.7",
+        "version_normalized": "0.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/aginev/search-filters.git",
+            "reference": "000267624fbaf6930e47fd1e3fff1c9b263459ff"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/aginev/search-filters/zipball/000267624fbaf6930e47fd1e3fff1c9b263459ff",
+            "reference": "000267624fbaf6930e47fd1e3fff1c9b263459ff",
+            "shasum": ""
+        },
+        "time": "2016-05-09T11:59:50+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Aginev\\SearchFilters\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Atanas Ginev",
+                "email": "naskospam@gmail.com"
+            }
+        ],
+        "description": "Easily apply search criteria on Laravel 5 queries",
+        "homepage": "http://aginev.com",
+        "keywords": [
+            "Laravel 5 search filters",
+            "search criteria on Laravel 5 queries",
+            "search filters"
         ]
     }
 ]
