@@ -22,7 +22,7 @@ Tokenizer PHP Extension
 
 2. database/laravel.sql Datei in die Datenbank einspeisen
 
-3. .env Datei bearbeiten (Datenbankdaten + E-Maildaten)
+3. .env.example Datei öffnen und als .env speichern, dann bearbeiten (Datenbankdaten + E-Maildaten)
 
 4. http://ihredomain.de/public aufrufen
 
@@ -54,9 +54,9 @@ use App\Http\Controllers\Controller;
 
 class NameController extends Controller {
    public function index() {
-    
+
 	return view('name');
-  
+
    }
 
 }
@@ -144,4 +144,3 @@ Navbar rechts:
 ### Lizenz
 
 Teile der Webanwendungen dürfen verändert bzw. abgeändert werden. Eine Wiederverwendung ist ohne die Einwilligung von Sven Liebert, Niklas Lang und Merlin Brandner nicht gestattet.
-
