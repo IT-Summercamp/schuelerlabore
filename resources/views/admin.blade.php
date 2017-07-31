@@ -35,23 +35,35 @@
 					<span class="icon-bar" style="background-color:white;"></span>
 
 				</button>
+				@if (Auth::guest())
 				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
-
+				@else
+				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/home') }}"><font color=white>Adminbackend</a></font>
+				@endif
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 				@if (Auth::guest())
 
-					<li style="font-size : 20px;" ><a href="{{ url('/') }}"></a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/schueler') }}"><font color=white>Für Schüler</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
 				@else
-					<li style="font-size : 20px;"><a href="{{ url('/home')}} "><font color=white>Startseite</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
+				<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#34495e"><font color=white>Verwaltung</font><span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
+							<li><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
+							@if (Auth::user()->administrator == "Ja")
+							<li><a href="{{ url('/benutzerverwaltung')}} ">Benutzerverwaltung</a></li>
+							@endif
+						</ul>
+					</li>
+					<li style="font-size : 20px;"><a href="/public/messages"><font color=white>Nachrichten @include('messenger.unread-count')</font></a></li>
+
+
 
 
 
@@ -69,9 +81,6 @@
 							</ul>
 						</li>
 					@else
-					@if (Auth::user()->administrator == "Ja")
-					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></font></li>
-					@endif
 					<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
