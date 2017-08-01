@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css')}}">
 		<link rel="stylesheet" href="{{ asset('css/stickyfooter.css')}}">
+		<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>

@@ -8,12 +8,18 @@
 
 				<div style="font-size : 180%;" class="panel-heading">Schülerlabore </div>
 				<button class="btn btn-default"data-toggle="collapse" data-target="#demo" style="margin:15px 15px 0px 15px">Filterung</button>
+
+
+
 				<form class="form-horizontal" role="form" method="POST" action="{{ url('filter') }}">
 					 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 
                     <div id="demo" class="collapse">
-
+										</br>
+											<div class="alert alert-info">
+											<p align="center"> <b>Die ist keine UND-Suche, sondern eine Entweder-ODER-Suche</b></p>
+											</div>
                         <div class="row">
 
                             <!-- schulart-->
