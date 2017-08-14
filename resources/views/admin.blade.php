@@ -42,6 +42,7 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
+					<li style="font-size : 20px;"><a href="/public/messages"><font color=white>Informationen @include('messenger.unread-count')</font></a></li>
 				<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#34495e"><font color=white>Verwaltung</font><span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
@@ -52,7 +53,7 @@
 							@endif
 						</ul>
 					</li>
-					<li style="font-size : 20px;"><a href="/public/messages"><font color=white>Nachrichten @include('messenger.unread-count')</font></a></li>
+
 
 
 
