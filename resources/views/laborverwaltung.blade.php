@@ -24,19 +24,23 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Laborverwaltung</div>
+			</br>
 <div style="overflow-x:auto;">
 				<table style="display: table" class="table" id="table">
+					<thead>
          <tr>
-            <td><b>ID</b></td>
-            <td><b>Name</b></td>
-						<td><b>Ort</b></td>
-						<td><b>E-Mail</b></td>
-						<td><b>Telefon</b></td>
-						<td><b>Website</b></td>
-						<td></td>
-						<td></td>
+            <th><b>ID</b></th>
+            <th><b>Name</b></th>
+						<th><b>Ort</b></th>
+						<th><b>E-Mail</b></th>
+						<th><b>Telefon</b></th>
+						<th><b>Website</b></th>
+						<th></th>
+						<th></th>
 
          </tr>
+			 </thead>
+			 <tbody>
          @foreach ($labore as $labor)
          <tr>
             <td>{{ $labor->id }}</td>
@@ -47,6 +51,8 @@
 						<td>{{ $labor->website }}</td>
 						@if (Auth::user()->schuelerlabor == $labor->name || Auth::user()->administrator == "Ja")
 						<td><a href = 'laborbearbeiten/{{ $labor->name }}'><label class="btn btn-warning">Bearbeiten</label></a></td>
+						@else
+						<td></td>
 						@endif
 						@if (Auth::user()->administrator == "Ja")
 						<td><a href = 'laborentfernen/{{ $labor->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
@@ -55,6 +61,7 @@
 						@endif
          </tr>
          @endforeach
+			 </tbody>
 				 <td></td>
 				 <td></td>
 				 <td></td>
@@ -70,12 +77,13 @@
 				 @endif
 
 			</table>
-
+</br>
 </div>
 				</div>
 			</div>
 		</div>
 
 </div>
+
 @endif
 @endsection

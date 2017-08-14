@@ -26,17 +26,21 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Benutzerverwaltung - {{Auth::user()->name}} </div>
+			</br>
 <div style="overflow-x:auto;">
-				<table class="table" id="table">
-         <tr>
-            <td><b>ID</b></td>
-            <td><b>Name</b></td>
-						<td><b>E-Mail</b></td>
-						<td><b>Schülerlabor</b></td>
-						<td><b>Administrator</b></td>
-						<td></td>
-						<td></td>
+				<table class="table">
+					<thead>
+				<tr>
+            <th><b>ID</b></th>
+            <th><b>Name</b></th>
+						<th><b>E-Mail</b></th>
+						<th><b>Schülerlabor</b></th>
+						<th><b>Administrator</b></th>
+						<th></th>
+						<th></th>
          </tr>
+			 </thead>
+			 <tbody>
          @foreach ($users as $user)
          <tr>
             <td>{{ $user->id }}</td>
@@ -52,15 +56,18 @@
 						<td><a href = 'benutzerentfernen/{{ $user->id }}'><label class="btn btn-danger">Entfernen</label></a></td>
          </tr>
          @endforeach
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td></td>
-				 <td><a href = '{{ url('/benutzerhinzufügen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
+		 </tbody>
+		 <tr>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td><a href = '{{ url('/benutzerhinzufügen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
+	 </tr>
       </table>
-
+</br>
 </div>
 				</div>
 			</div>
