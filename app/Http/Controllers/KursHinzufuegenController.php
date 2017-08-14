@@ -30,7 +30,8 @@ class KursHinzufuegenController extends Controller {
 	public function index()
 	{
 		$labore = DB::select('select * from labore') ;
-    return view('kurshinzufuegen',['labore'=>$labore]);
+		$version = DB::select('select * from version where id=1') ;
+    return view('kurshinzufuegen',['labore'=>$labore, 'version'=>$version]);
 	}
 
 	public function datenbank(Request $request) {

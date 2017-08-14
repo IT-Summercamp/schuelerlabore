@@ -2,15 +2,12 @@
 
 <div class="media alert {{ $class }}">
     <h4 class="media-heading">
-        <a href="{{ route('messages.show', $thread->id) }}">{{ $thread->subject }}</a>
-        ({{ $thread->userUnreadMessagesCount(Auth::id()) }} ungelesen)</h4>
+        <a href="{{ route('messages.show', $thread->id) }}">Information zu {{ $thread->subject }}
+      </h4></a>
     <p>
-        {{ $thread->latestMessage->body }}
+          <small><b>Letzte Nachricht:</b></small> {{ $thread->latestMessage->body }}
     </p>
     <p>
-        <small><strong>Absender:</strong> {{ $thread->creator()->name }}</small>
-    </p>
-    <p>
-        <small><strong>Teilnehmer:</strong> {{ $thread->participantsString(Auth::id()) }}</small>
+        <small><strong>Zuständiger Administrator:</strong> <a href="mailto:{{ $thread->creator()->email }}"> {{ $thread->creator()->name }}</a></small>
     </p>
 </div>

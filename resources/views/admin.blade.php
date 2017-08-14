@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Entwickelt von Sven Siebert, Niklas Lang, Merlin Brandner">
+	<meta name="author" content="Entwickelt von Sven Liebert, Niklas Lang, Merlin Brandner">
 	<title> </title>
 	<style>
 	a {word-wrap: break-word;}
@@ -37,29 +37,18 @@
 					<span class="icon-bar" style="background-color:white;"></span>
 
 				</button>
-				@if (Auth::guest())
-				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/') }}"><font color=white>SchülerlaboreSachsen</a></font>
-				@else
 				<a style="font-size : 22.5px;" class="navbar-brand" href="{{ url('/home') }}"><font color=white>Adminbackend</a></font>
-				@endif
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-				@if (Auth::guest())
-
-					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/schueler') }}"><font color=white>Für Schüler</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
-				@else
 				<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#34495e"><font color=white>Verwaltung</font><span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="{{ url('/laborverwaltung')}} ">Laborverwaltung</a></li>
-							<li><a href="{{ url('/kursverwaltung')}} ">Kursverwaltung</a></li>
+							<li><a href="{{ url('/laborverwaltung')}} "><font color=black>Laborverwaltung</font></a></li>
+							<li><a href="{{ url('/kursverwaltung')}} "><font color=black>Kursverwaltung</font></a></li>
 							@if (Auth::user()->administrator == "Ja")
-							<li><a href="{{ url('/benutzerverwaltung')}} ">Benutzerverwaltung</a></li>
+							<li><a href="{{ url('/benutzerverwaltung')}} "><font color=black>Benutzerverwaltung</font></a></li>
 							@endif
 						</ul>
 					</li>
@@ -69,34 +58,23 @@
 
 
 
-				@endif
 
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
-					@if (Auth::guest())
-					<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
-								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
-							</ul>
-						</li>
-					@else
 					<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								@if (Auth::user()->administrator == "Ja")
-								<li><a href="{{ url('/bearbeitunglehrer')}} ">Seitenbearbeitung Lehrer</a></li>
-								<li><a href="{{ url('/bearbeitungschueler')}} ">Seitenbearbeitung Schüler</a></li>
-								<li><a href="{{ url('/bearbeitungimpressum')}} ">Seitenbearbeitung Impressum</a></li>
-								<li><a href="https://it-summercamp.github.io/schuelerlabore/ ">Readme/Dokumentation</a></li>
+								<li><a href="{{ url('/bearbeitunglehrer')}} "><font color=black>Seitenbearbeitung Lehrer</font></a></li>
+								<li><a href="{{ url('/bearbeitungschueler')}} "><font color=black>Seitenbearbeitung Schüler</font></a></li>
+								<li><a href="{{ url('/bearbeitungimpressum')}} "><font color=black>Seitenbearbeitung Impressum</font></a></li>
+								<li><a href="https://it-summercamp.github.io/schuelerlabore/ "><font color=black>Readme/Dokumentation</font></a></li>
 								@endif
-								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
-								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
+								<li><a href="{{ url('/impressum') }}"><font color=black>Impressum</font></a></li>
+								<li><a href="{{ url('/auth/logout') }}"><font color=black>Abmelden</font></a></li>
 							</ul>
 						</li>
-					@endif
 				</ul>
 			</div>
 		</div>
@@ -149,6 +127,25 @@
   ga('send', 'pageview');
 
 </script>
+<div id="footer">
+    <div class="container">
+        <p class="text-muted credit"><span style="text-align: left; float: left">&copy; 2017 <a href="http://it-summercamp-dd.de">IT-Summercamp Dresden</a></span> <span class="hidden-phone"
+                                                    style="text-align: right; float: right"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp; Version:
+																										<?php
+																										foreach ($version as $versions) {
+																											$id = $versions->id;
+																											$versionsnummer = $versions->version;
+																										}
+																										echo $versionsnummer;?>
 
+																									</br>
+																								</br>
+																									@if (Auth::user()->name == "Sven Liebert")
+																									<a href = 'versionsaenderung'><label class="btn btn-warning">Versionsnummer ändern</label></a>
+																									@endif
+
+																					</span></p>
+    </div>
+</div>
 </body>
 </html>

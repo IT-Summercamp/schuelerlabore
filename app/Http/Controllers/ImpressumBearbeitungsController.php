@@ -8,7 +8,8 @@ use App\Http\Controllers\Controller;
 class ImpressumBearbeitungsController extends Controller {
    public function show() {
      $impressum = DB::select('select * from impressum where id=1') ;
-      return view('impressumbearbeitung',['impressum'=>$impressum]) ;
+     $version = DB::select('select * from version where id=1') ;
+      return view('impressumbearbeitung',['impressum'=>$impressum,'version'=>$version]) ;
    }
    public function edit(Request $request) {
     $name = $request->input('name');

@@ -24,6 +24,7 @@ class MessagesController extends Controller
     {
         // All threads, ignore deleted/archived participants
         $threads = Thread::getAllLatest()->get();
+              $version = DB::select('select * from version where id=1') ;
 
         // All threads that user is participating in
         // $threads = Thread::forUser(Auth::id())->latest('updated_at')->get();
@@ -31,7 +32,7 @@ class MessagesController extends Controller
         // All threads that user is participating in, with new messages
         // $threads = Thread::forUserWithNewMessages(Auth::id())->latest('updated_at')->get();
 
-        return view('messenger.index', compact('threads'));
+        return view('messenger.index', compact('threads'), ['version'=>$version]);
     }
 
     /**
@@ -42,10 +43,11 @@ class MessagesController extends Controller
      */
     public function show($id)
     {
+            $version = DB::select('select * from version where id=1') ;
        try {
             $thread = Thread::findOrFail($id);
         } catch (ModelNotFoundException $e) {
-            Session::flash('error_message', 'The thread with ID: ' . $id . ' was not found.');
+            Session::flash('error_message', 'Die Information mit der Nummer ' . $id . ' wurde nicht gefunden.');
 
             return redirect('messages');
         }
@@ -59,7 +61,7 @@ class MessagesController extends Controller
 
         $thread->markAsRead($userId);
 
-        return view('messenger.show', compact('thread', 'users'));
+        return view('messenger.show', compact('thread', 'users'), ['version'=>$version]);
     }
 
     /**
@@ -70,8 +72,9 @@ class MessagesController extends Controller
     public function create()
     {
         $users = User::where('id', '!=', Auth::id())->get();
+              $version = DB::select('select * from version where id=1') ;
 
-        return view('messenger.create', compact('users'));
+        return view('messenger.create', compact('users'), ['version'=>$version]);
     }
 
     /**
@@ -126,7 +129,7 @@ class MessagesController extends Controller
         try {
             $thread = Thread::findOrFail($id);
         } catch (ModelNotFoundException $e) {
-            Session::flash('error_message', 'The thread with ID: ' . $id . ' was not found.');
+            Session::flash('error_message', 'Die Information mit der Nummer ' . $id . ' wurde nicht gefunden.');
 
             return redirect('messages');
         }

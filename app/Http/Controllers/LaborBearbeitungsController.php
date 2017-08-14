@@ -8,7 +8,8 @@ use App\Http\Controllers\Controller;
 class LaborBearbeitungsController extends Controller {
    public function show($name) {
      $labore = DB::select('select * from labore where name = ?',[$name]) ;
-      return view('laborbearbeitung',['labore'=>$labore]) ;
+           $version = DB::select('select * from version where id=1') ;
+      return view('laborbearbeitung',['labore'=>$labore, 'version'=>$version]) ;
    }
    public function edit(Request $request,$name) {
     $name = $request->input('name');

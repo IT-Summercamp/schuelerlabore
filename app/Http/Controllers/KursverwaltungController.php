@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 class KursverwaltungController extends Controller {
    public function index() {
       $kurse = DB::select('select * from kurse') ;
-      return view('kursverwaltung',['kurse'=>$kurse]) ;
+            $version = DB::select('select * from version where id=1') ;
+      return view('kursverwaltung',['kurse'=>$kurse, 'version'=>$version]) ;
    }
 }

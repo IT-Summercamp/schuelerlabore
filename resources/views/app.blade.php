@@ -46,16 +46,14 @@
 
 					<li style="font-size : 20px;" ><a href="{{ url('/') }}"></a></li>
 					<li style="font-size : 20px;"><a href="{{ url('/schuelerlabore') }}"><font color=white>Schülerlabore</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/schueler') }}"><font color=white>Für Schüler</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/lehrer') }}"><font color=white>Für Lehrer</a></font></li>
+					<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71;"><font color=white>Für ...</font><span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="{{ url('/schueler') }}">Schüler</a></li>
+								<li><a href="{{ url('/lehrer') }}">Lehrer</a></li>
+							</ul>
+						</li>
 					<li style="font-size : 20px;"><a href="{{ url('/aktuelleveranstaltungen') }}"><font color=white>Aktuelle Veranstaltungen</a></font></li>
-				@else
-					<li style="font-size : 20px;"><a href="{{ url('/home')}} "><font color=white>Startseite</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/laborverwaltung')}} "><font color=white>Laborverwaltung</a></font></li>
-					<li style="font-size : 20px;"><a href="{{ url('/kursverwaltung')}} "><font color=white>Kursverwaltung</a></font></li>
-
-
-
 				@endif
 
 				</ul>
@@ -63,23 +61,10 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 					<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71;"><font color=white>Anmeldung/Impressum</font><span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;background-color:#2ECC71;"><font color=white><i class="fa fa-cogs" aria-hidden="true"></i></font><span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/auth/login') }}">Anmelden</a></li>
 								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
-							</ul>
-						</li>
-					@else
-					<li><a style="font-size : 20px;" href="{{ url('/benutzerverwaltung')}} "><font color=white>Benutzerverwaltung</a></font></li>
-					<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="font-size : 20px;"><font color=white>{{ Auth::user()->name }}</font> <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/bearbeitunglehrer')}} ">Seitenbearbeitung Lehrer</a></li>
-								<li><a href="{{ url('/bearbeitungschueler')}} ">Seitenbearbeitung Schüler</a></li>
-								<li><a href="{{ url('/bearbeitungimpressum')}} ">Seitenbearbeitung Impressum</a></li>
-								<li><a href="https://it-summercamp.github.io/schuelerlabore/ ">Readme/Dokumentation</a></li>
-								<li><a href="{{ url('/impressum') }}">Impressum</a></li>
-								<li><a href="{{ url('/auth/logout') }}">Abmelden</a></li>
 							</ul>
 						</li>
 					@endif
@@ -135,6 +120,9 @@
   ga('send', 'pageview');
 
 </script>
-
+<div id="footer">
+    <div class="container">
+        <p class="text-muted credit"><span style="text-align: left; float: left">&copy; 2017 <a href="http://it-summercamp-dd.de">IT-Summercamp Dresden</a></span>
+    </div>
 </body>
 </html>

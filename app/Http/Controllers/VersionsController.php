@@ -5,15 +5,14 @@ use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class LehrerBearbeitungsController extends Controller {
+class VersionsController extends Controller {
    public function show() {
-     $lehrer = DB::select('select * from fuerlehrer where id=1') ;
            $version = DB::select('select * from version where id=1') ;
-      return view('lehrerbearbeitung',['lehrer'=>$lehrer, 'version'=>$version]) ;
+      return view('versionsaenderung',['version'=>$version]) ;
    }
    public function edit(Request $request) {
-    $text = $request->input('text');
-      DB::update('update fuerlehrer set text = ? where id = 1',[$text]) ;
+    $versionneu = $request->input('versionneu');
+      DB::update('update version set version = ? where id = 1',[$versionneu]) ;
 	  ?><meta http-equiv="refresh" content="0; URL=/public/home"><?php
    }
 }

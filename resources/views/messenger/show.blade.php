@@ -7,7 +7,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div style="font-size : 180%;" class="panel-heading">Nachrichten - {{ $thread->subject }} </div>
+				<div style="font-size : 180%;" class="panel-heading">Information zu {{ $thread->subject }} von {{ $thread->creator()->name }} </div>
 
 <div class="panel-body">
         @each('messenger.partials.messages', $thread->messages, 'message')

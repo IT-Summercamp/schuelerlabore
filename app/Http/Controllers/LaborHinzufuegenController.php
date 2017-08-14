@@ -29,7 +29,8 @@ class LaborHinzufuegenController extends Controller {
 	 */
 	public function index()
 	{
-    return view('laborhinzufuegen');
+		$version = DB::select('select * from version where id=1') ;
+    return view('laborhinzufuegen', 'version'=>$version);
 	}
 
 	public function datenbank(Request $request) {

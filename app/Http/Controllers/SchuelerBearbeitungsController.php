@@ -8,7 +8,8 @@ use App\Http\Controllers\Controller;
 class SchuelerBearbeitungsController extends Controller {
    public function show() {
      $schueler = DB::select('select * from fuerschueler where id=1') ;
-      return view('schuelerbearbeitung',['schueler'=>$schueler]) ;
+           $version = DB::select('select * from version where id=1') ;
+      return view('schuelerbearbeitung',['schueler'=>$schueler, 'version'=>$version]) ;
    }
    public function edit(Request $request) {
     $text = $request->input('text');

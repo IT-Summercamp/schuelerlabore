@@ -24,7 +24,7 @@
 
   @if (Auth::user()->administrator == "Ja")
     <div class="form-group">
-    <a href="messageentfernen/{{ $thread->id }}" class="btn btn-danger btn-block" role="button">Nachricht entfernen</a>
+    <a href="messageentfernen/{{ $thread->id }}" class="btn btn-danger btn-block" role="button">Information entfernen</a>
     </div>
   @endif
 </form>

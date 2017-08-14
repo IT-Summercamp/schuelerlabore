@@ -24,17 +24,17 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div style="font-size : 180%;" class="panel-heading">Schülerseite bearbeiten </div>
+				<div style="font-size : 180%;" class="panel-heading">Versionsnummer bearbeiten </div>
 				<div class="panel-body">
 		 <div class="form-style-6">
 
-		       <form class="form-horizontal" role="form" method="POST" action="{{ url('bearbeitungschueler') }}">
+		       <form class="form-horizontal" role="form" method="POST" action="{{ url('versionsaenderung') }}">
 		          <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 							<div class="form-group">
-										 <label class="col-md-4 control-label">Text</label>
+										 <label class="col-md-4 control-label">Versionsnummer</label>
 										 <div class="col-md-6">
-													 <input type="text" class="form-control" name="text" value="<?php echo $schueler[0]->text; ?>">
+													 <input type="text" class="form-control" name="versionneu" value="<?php echo $version[0]->version; ?>">
 
 												 </br>
 										 </div>
@@ -43,7 +43,7 @@
 																		<div class="form-group">
 												 						 <div class="col-md-6 col-md-offset-4">
 												 							 <button type="submit" class="btn btn-success" >
-												 								 Seite bearbeiten
+												 								 Versionsnummer bearbeiten
 												 							 </button>
 												 						 </div>
 												 					 </div>

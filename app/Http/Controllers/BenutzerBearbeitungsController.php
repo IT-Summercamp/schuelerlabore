@@ -9,7 +9,8 @@ class BenutzerBearbeitungsController extends Controller {
    public function show($id) {
      $users = DB::select('select * from users where id = ?',[$id]) ;
      $labore = DB::select('select * from labore') ;
-      return view('benutzerprofil',['users'=>$users, 'labore'=>$labore]) ;
+     $version = DB::select('select * from version where id=1') ;
+      return view('benutzerprofil',['users'=>$users, 'labore'=>$labore, 'version'=>$version]) ;
    }
    public function edit(Request $request,$id) {
      $name = $request->input('name') ;

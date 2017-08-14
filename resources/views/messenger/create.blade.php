@@ -7,7 +7,7 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
 
-				<div style="font-size : 180%;" class="panel-heading">Neue Nachricht erstellen </div>
+				<div style="font-size : 180%;" class="panel-heading">Neue Information erstellen </div>
 
 <div class="panel-body">
     <form action="{{ route('messages.store') }}" method="post">

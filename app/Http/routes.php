@@ -57,6 +57,10 @@ Route::post('bearbeitungimpressum', 'ImpressumBearbeitungsController@edit');
 Route::get('bearbeitungschueler', 'SchuelerBearbeitungsController@show');
 Route::post('bearbeitungschueler', 'SchuelerBearbeitungsController@edit');
 
+Route::get('versionsaenderung', 'VersionsController@show');
+Route::post('versionsaenderung', 'VersionsController@edit');
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
