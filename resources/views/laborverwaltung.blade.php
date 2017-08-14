@@ -24,7 +24,7 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Laborverwaltung</div>
-
+<div style="overflow-x:auto;">
 				<table style="display: table" class="table" id="table">
          <tr>
             <td><b>ID</b></td>
@@ -71,7 +71,7 @@
 
 			</table>
 
-
+</div>
 				</div>
 			</div>
 		</div>

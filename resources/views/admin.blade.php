@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css')}}">
 		<link rel="stylesheet" href="{{ asset('css/stickyfooter.css')}}">
 		<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css')}}">
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -107,6 +108,37 @@
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+	<script>
+	$(document).ready(function(){
+            $('table').DataTable( {
+                "language": {
+                    "sEmptyTable":      "Keine Daten in der Tabelle vorhanden",
+                    "sInfo":            "_START_ bis _END_ von _TOTAL_ Eintr&auml;gen",
+                    "sInfoEmpty":       "0 bis 0 von 0 Einträgen",
+                    "sInfoFiltered":    "(gefiltert von _MAX_ Eintr&auml;gen)",
+                    "sInfoPostFix":     "",
+                    "sInfoThousands":   ".",
+                    "sLengthMenu":      "_MENU_ Eintr&auml;ge anzeigen",
+                    "sLoadingRecords":  "Wird geladen...",
+                    "sProcessing":      "Bitte warten...",
+                    "sSearch":          "Suchen",
+                    "sZeroRecords":     "Keine Eintr&auml;ge vorhanden.",
+                    "oPaginate": {
+                        "sFirst":       "Erste",
+                        "sPrevious":    "Zur&uuml;ck",
+                        "sNext":        "N&auml;chste",
+                        "sLast":        "Letzte"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": aktivieren, um Spalte aufsteigend zu sortieren",
+                        "sSortDescending": ": aktivieren, um Spalte absteigend zu sortieren"
+                    }
+                },
+                paging: false
+            } );
+        });
+    </script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

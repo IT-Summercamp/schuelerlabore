@@ -24,7 +24,7 @@
 			<div class="panel panel-default">
 
 				<div style="font-size : 180%;" class="panel-heading">Kursverwaltung</div>
-
+<div style="overflow-x:auto;">
 				<table style="display: table"class="table" id="table">
          <tr>
             <td><b>ID</b></td>
@@ -64,7 +64,7 @@
 				 <td><a href = '{{ url('/kurshinzufuegen')}}'><label class="btn btn-success">Hinzufügen</label></a></td>
 
       </table>
-
+</div>
 
 				</div>
 			</div>
